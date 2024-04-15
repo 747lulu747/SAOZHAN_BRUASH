@@ -1,0 +1,26 @@
+{
+  "files.associations": {
+    "foc.h": "c",
+    "picontroller.h": "c",
+    "swm211_port.h": "c",
+    "swm211.h": "c",
+    "util.h": "c",
+    "learntest.h": "c",
+    "myproject.h": "c",
+    "pll.h": "c",
+    "foc_util.h": "c",
+    "foc_interface.h": "c",
+    "observers.h": "c",
+    "positioncheck.h": "c",
+    "picontrol.h": "c",
+    "mytype.h": "c",
+    "test.h": "c",
+    "irscan.h": "c",
+    "ircontrol.h": "c",
+    "fan.h": "c",
+    "mills_app.h": "c",
+    "develop.h": "c",
+    "parameter.h": "c",
+    "flash.h": "c"
+  }
+}

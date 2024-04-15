@@ -1,0 +1,1681 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.HardwareInit) refers to pwm_drive.o(i.Init_PWM_Drive) for Init_PWM_Drive
+    main.o(i.HardwareInit) refers to gpio.o(i.Init_GPIO) for Init_GPIO
+    main.o(i.HardwareInit) refers to swm2x1_div.o(i.DIV_Init) for DIV_Init
+    main.o(i.HardwareInit) refers to swm2x1_cordic.o(i.CORDIC_Init) for CORDIC_Init
+    main.o(i.HardwareInit) refers to adc.o(i.Init_ADC) for Init_ADC
+    main.o(i.HardwareInit) refers to timer.o(i.Init_Timer) for Init_Timer
+    main.o(i.HardwareInit) refers to opa.o(i.Init_OPA) for Init_OPA
+    main.o(i.HardwareInit) refers to timer.o(i.FGOutput_Timer) for FGOutput_Timer
+    main.o(i.HardwareInit) refers to uidiv.o(.text) for __aeabi_uidivmod
+    main.o(i.HardwareInit) refers to system_swm211.o(.data) for SystemCoreClock
+    main.o(i.SoftwareInit) refers to mtcontrolfunction.o(i.MotorcontrolInit) for MotorcontrolInit
+    main.o(i.SoftwareInit) refers to mtcontrol.o(.data) for mcState
+    main.o(i.SoftwareInit) refers to protect.o(.data) for mcFaultSource
+    main.o(i.main) refers to system_swm211.o(i.SystemInit) for SystemInit
+    main.o(i.main) refers to main.o(i.HardwareInit) for HardwareInit
+    main.o(i.main) refers to main.o(i.SoftwareInit) for SoftwareInit
+    main.o(i.main) refers to addfunction.o(i.Timer_FGOutput) for Timer_FGOutput
+    addfunction.o(i.Base_1ms_TIM) refers to observers.o(i.Abs_F15) for Abs_F15
+    addfunction.o(i.Base_1ms_TIM) refers to addfunction.o(.bss) for .bss
+    addfunction.o(i.Base_1ms_TIM) refers to mtcontrol.o(.data) for mcState
+    addfunction.o(i.Base_1ms_TIM) refers to foclib.o(.bss) for FocVar
+    addfunction.o(i.Delay_ms) refers to addfunction.o(.bss) for .bss
+    addfunction.o(i.LPF_Func) refers to addfunction.o(i.LPF_General) for LPF_General
+    addfunction.o(i.LPF_Func) refers to dflti.o(.text) for __aeabi_i2d
+    addfunction.o(i.LPF_Func) refers to ddiv.o(.text) for __aeabi_ddiv
+    addfunction.o(i.LPF_Func) refers to dmul.o(.text) for __aeabi_dmul
+    addfunction.o(i.LPF_Func) refers to dfixui.o(.text) for __aeabi_d2uiz
+    addfunction.o(i.LPF_Func) refers to dfltui.o(.text) for __aeabi_ui2d
+    addfunction.o(i.LPF_Func) refers to dscalb.o(.text) for __ARM_scalbn
+    addfunction.o(i.LPF_Func) refers to mtcontrol.o(.data) for mcState
+    addfunction.o(i.LPF_Func) refers to addfunction.o(.bss) for .bss
+    addfunction.o(i.LPF_Func) refers to observers.o(.bss) for myObserverVar
+    addfunction.o(i.LPF_Func) refers to foclib.o(.bss) for FocVar
+    addfunction.o(i.LPF_Func) refers to speedmode.o(.bss) for AdcVarible
+    addfunction.o(i.LPF_Func) refers to addfunction.o(.data) for .data
+    addfunction.o(i.LPF_Func) refers to mtcontrolfunction.o(.bss) for mcCurOffset
+    addfunction.o(i.ONOFF_Starttest) refers to addfunction.o(.bss) for .bss
+    addfunction.o(i.ONOFF_Starttest) refers to mtcontrol.o(.data) for mcState
+    addfunction.o(i.Speed_response) refers to addfunction.o(i.mc_ramp) for mc_ramp
+    addfunction.o(i.Speed_response) refers to picontrol.o(i.mc_ControllerPI) for mc_ControllerPI
+    addfunction.o(i.Speed_response) refers to mtcontrol.o(.data) for mcState
+    addfunction.o(i.Speed_response) refers to addfunction.o(.bss) for .bss
+    addfunction.o(i.Speed_response) refers to picontrol.o(.bss) for Spd_Controller
+    addfunction.o(i.Speed_response) refers to foclib.o(.bss) for FocVar
+    addfunction.o(i.Timer_FGOutput) refers to dflti.o(.text) for __aeabi_i2d
+    addfunction.o(i.Timer_FGOutput) refers to dmul.o(.text) for __aeabi_dmul
+    addfunction.o(i.Timer_FGOutput) refers to ddiv.o(.text) for __aeabi_ddiv
+    addfunction.o(i.Timer_FGOutput) refers to dadd.o(.text) for __aeabi_dsub
+    addfunction.o(i.Timer_FGOutput) refers to dfixui.o(.text) for __aeabi_d2uiz
+    addfunction.o(i.Timer_FGOutput) refers to mtcontrol.o(.data) for mcState
+    addfunction.o(i.Timer_FGOutput) refers to addfunction.o(.bss) for .bss
+    addfunction.o(i.mc_ramp) refers to addfunction.o(.bss) for .bss
+    speedmode.o(i.CLKMode_Control) refers to swm2x1_gpio.o(i.GPIO_Init) for GPIO_Init
+    speedmode.o(i.CLKMode_Control) refers to swm2x1_gpio.o(i.GPIO_GetBit) for GPIO_GetBit
+    speedmode.o(i.CLKMode_Control) refers to timer.o(i.Init_Timer) for Init_Timer
+    speedmode.o(i.CLKMode_Control) refers to speedmode.o(.bss) for .bss
+    speedmode.o(i.CLKMode_Control) refers to addfunction.o(.bss) for mcSpeedRamp
+    speedmode.o(i.CLKMode_Control) refers to speedmode.o(.data) for .data
+    speedmode.o(i.PWMMode_Control) refers to swm2x1_gpio.o(i.GPIO_Init) for GPIO_Init
+    speedmode.o(i.PWMMode_Control) refers to swm2x1_gpio.o(i.GPIO_GetBit) for GPIO_GetBit
+    speedmode.o(i.PWMMode_Control) refers to timer.o(i.Init_Timer) for Init_Timer
+    speedmode.o(i.PWMMode_Control) refers to dfltui.o(.text) for __aeabi_ui2d
+    speedmode.o(i.PWMMode_Control) refers to ddiv.o(.text) for __aeabi_ddiv
+    speedmode.o(i.PWMMode_Control) refers to d2f.o(.text) for __aeabi_d2f
+    speedmode.o(i.PWMMode_Control) refers to fmul.o(.text) for __aeabi_fmul
+    speedmode.o(i.PWMMode_Control) refers to ffixi.o(.text) for __aeabi_f2iz
+    speedmode.o(i.PWMMode_Control) refers to fflti.o(.text) for __aeabi_i2f
+    speedmode.o(i.PWMMode_Control) refers to fadd.o(.text) for __aeabi_fadd
+    speedmode.o(i.PWMMode_Control) refers to speedmode.o(.bss) for .bss
+    speedmode.o(i.PWMMode_Control) refers to addfunction.o(.bss) for mcSpeedRamp
+    speedmode.o(i.PWMMode_Control) refers to speedmode.o(.data) for .data
+    speedmode.o(i.SpeedMode_Control) refers to dfltui.o(.text) for __aeabi_ui2d
+    speedmode.o(i.SpeedMode_Control) refers to ddiv.o(.text) for __aeabi_ddiv
+    speedmode.o(i.SpeedMode_Control) refers to dmul.o(.text) for __aeabi_dmul
+    speedmode.o(i.SpeedMode_Control) refers to dfixi.o(.text) for __aeabi_d2iz
+    speedmode.o(i.SpeedMode_Control) refers to addfunction.o(.bss) for mcSpeedRamp
+    speedmode.o(i.SpeedMode_Control) refers to speedmode.o(.data) for .data
+    speedmode.o(i.VSPMode_Control) refers to addfunction.o(i.LPF_General) for LPF_General
+    speedmode.o(i.VSPMode_Control) refers to fflti.o(.text) for __aeabi_i2f
+    speedmode.o(i.VSPMode_Control) refers to fmul.o(.text) for __aeabi_fmul
+    speedmode.o(i.VSPMode_Control) refers to fadd.o(.text) for __aeabi_fadd
+    speedmode.o(i.VSPMode_Control) refers to ffixi.o(.text) for __aeabi_f2iz
+    speedmode.o(i.VSPMode_Control) refers to speedmode.o(.bss) for .bss
+    speedmode.o(i.VSPMode_Control) refers to speedmode.o(.data) for .data
+    speedmode.o(i.VSPMode_Control) refers to addfunction.o(.bss) for mcSpeedRamp
+    interrupt.o(PlaceInRAM) refers to mtcontrolfunction.o(PlaceInRAM) for Get_CurrentABC
+    interrupt.o(PlaceInRAM) refers to mtcontrol.o(i.MC_Control) for MC_Control
+    interrupt.o(PlaceInRAM) refers to protect.o(i.Fault_Overcurrent) for Fault_Overcurrent
+    interrupt.o(PlaceInRAM) refers to swm2x1_pwm.o(i.PWM_IntClr) for PWM_IntClr
+    interrupt.o(i.ACMP_Handler) refers to mtcontrol.o(.data) for mcState
+    interrupt.o(i.ACMP_Handler) refers to protect.o(.data) for mcFaultSource
+    interrupt.o(i.ADC0_Handler) refers to adc.o(i.SingleR_ADCInject_Deal) for SingleR_ADCInject_Deal
+    interrupt.o(i.ADC0_Handler) refers to uidiv.o(.text) for __aeabi_uidivmod
+    interrupt.o(i.ADC0_Handler) refers to mtcontrol.o(.data) for mcState
+    interrupt.o(i.ADC0_Handler) refers to mtcontrolfunction.o(.bss) for mcCurOffset
+    interrupt.o(i.ADC0_Handler) refers to positioncheck.o(.bss) for RIPDParam
+    interrupt.o(i.SysTick_Handler) refers to addfunction.o(i.LPF_Func) for LPF_Func
+    interrupt.o(i.SysTick_Handler) refers to protect.o(i.Fault_Detection) for Fault_Detection
+    interrupt.o(i.SysTick_Handler) refers to addfunction.o(i.Base_1ms_TIM) for Base_1ms_TIM
+    interrupt.o(i.SysTick_Handler) refers to addfunction.o(i.Speed_response) for Speed_response
+    interrupt.o(i.SysTick_Handler) refers to speedmode.o(i.SpeedMode_Control) for SpeedMode_Control
+    interrupt.o(i.TIMR0_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureH_INTStat) for TIMR_IC_CaptureH_INTStat
+    interrupt.o(i.TIMR0_Handler) refers to swm2x1_timr.o(i.TIMR_IC_GetCaptureH) for TIMR_IC_GetCaptureH
+    interrupt.o(i.TIMR0_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureH_INTClr) for TIMR_IC_CaptureH_INTClr
+    interrupt.o(i.TIMR0_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureL_INTStat) for TIMR_IC_CaptureL_INTStat
+    interrupt.o(i.TIMR0_Handler) refers to swm2x1_timr.o(i.TIMR_IC_GetCaptureL) for TIMR_IC_GetCaptureL
+    interrupt.o(i.TIMR0_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureL_INTClr) for TIMR_IC_CaptureL_INTClr
+    interrupt.o(i.TIMR0_Handler) refers to speedmode.o(.bss) for mcPwmInput
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureH_INTStat) for TIMR_IC_CaptureH_INTStat
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_IC_GetCaptureH) for TIMR_IC_GetCaptureH
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureH_INTClr) for TIMR_IC_CaptureH_INTClr
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureL_INTStat) for TIMR_IC_CaptureL_INTStat
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_IC_GetCaptureL) for TIMR_IC_GetCaptureL
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_IC_CaptureL_INTClr) for TIMR_IC_CaptureL_INTClr
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_GetCurValue) for TIMR_GetCurValue
+    interrupt.o(i.TIMR1_Handler) refers to swm2x1_timr.o(i.TIMR_INTClr) for TIMR_INTClr
+    interrupt.o(i.TIMR1_Handler) refers to speedmode.o(.bss) for mcPwmInput
+    flash.o(i.Flash_ReadDate) refers to flash.o(i.Flash_Find_Offset) for Flash_Find_Offset
+    flash.o(i.Flash_ReadDate) refers to swm211_flash.o(i.FLASH_Erase) for FLASH_Erase
+    flash.o(i.Flash_ReadDate) refers to swm211_flash.o(i.FLASH_Write) for FLASH_Write
+    flash.o(i.Flash_ReadDate) refers to flash.o(.bss) for .bss
+    flash.o(i.Flash_ReadDate) refers to flash.o(.data) for .data
+    flash.o(i.PowerOff_Save) refers to flash.o(i.Flash_ReadDate) for Flash_ReadDate
+    flash.o(i.PowerOff_Save) refers to swm211_flash.o(i.FLASH_Write) for FLASH_Write
+    flash.o(i.PowerOff_Save) refers to ircontrol.o(.data) for IRControl
+    flash.o(i.PowerOff_Save) refers to flash.o(.bss) for .bss
+    flash.o(i.PowerOff_Save) refers to addfunction.o(.data) for mcFRState
+    flash.o(i.PowerOff_Save) refers to flash.o(.data) for .data
+    flash.o(i.PowerOn_Read) refers to flash.o(i.Flash_ReadDate) for Flash_ReadDate
+    flash.o(i.PowerOn_Read) refers to flash.o(.bss) for .bss
+    flash.o(i.PowerOn_Read) refers to irscan.o(.bss) for RF
+    flash.o(i.PowerOn_Read) refers to ircontrol.o(.data) for IRControl
+    flash.o(i.PowerOn_Read) refers to addfunction.o(.data) for mcFRState
+    flash.o(i.Remote_Addr_Save) refers to flash.o(i.Flash_ReadDate) for Flash_ReadDate
+    flash.o(i.Remote_Addr_Save) refers to swm211_flash.o(i.FLASH_Write) for FLASH_Write
+    flash.o(i.Remote_Addr_Save) refers to irscan.o(.bss) for RF
+    flash.o(i.Remote_Addr_Save) refers to flash.o(.bss) for .bss
+    flash.o(i.Remote_Addr_Save) refers to flash.o(.data) for .data
+    iobeep.o(i.IOBeepInit) refers to iobeep.o(.data) for .data
+    iobeep.o(i.IOBeepPlay) refers to iobeep.o(.data) for .data
+    iobeep.o(i.IOBeepScan) refers to iobeep.o(i.IOBeepSound) for IOBeepSound
+    iobeep.o(i.IOBeepScan) refers to iobeep.o(.data) for .data
+    iobeep.o(i.IOBeepSound) refers to iobeep.o(.data) for .data
+    iobeep.o(i.SetBeepPlay) refers to iobeep.o(.data) for .data
+    irscan.o(i.Remote_Decode) refers to swm2x1_gpio.o(i.GPIO_GetBit) for GPIO_GetBit
+    irscan.o(i.Remote_Decode) refers to iobeep.o(i.SetBeepPlay) for SetBeepPlay
+    irscan.o(i.Remote_Decode) refers to irscan.o(.bss) for .bss
+    irscan.o(i.Remote_Decode) refers to flash.o(.data) for Remote_Save_Flag
+    ircontrol.o(i.AutoPowerControl) refers to ircontrol.o(.data) for .data
+    ircontrol.o(i.LEDControl) refers to ircontrol.o(.data) for .data
+    ircontrol.o(i.NatureWindControl) refers to ircontrol.o(.data) for .data
+    ircontrol.o(i.RemoteControl) refers to iobeep.o(i.SetBeepPlay) for SetBeepPlay
+    ircontrol.o(i.RemoteControl) refers to irscan.o(.bss) for RF
+    ircontrol.o(i.RemoteControl) refers to ircontrol.o(.data) for .data
+    ircontrol.o(i.RemoteControl) refers to addfunction.o(.data) for mcFRState
+    ircontrol.o(i.RemoteControl) refers to protect.o(.bss) for mcProtectTime
+    ircontrol.o(i.RemoteControl) refers to addfunction.o(.bss) for mcSpeedRamp
+    ircontrol.o(i.SleepWindControl) refers to ircontrol.o(.data) for .data
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_Ready) for Motor_Ready
+    mtcontrol.o(i.MC_Control) refers to timer.o(i.FGOutput_Timer) for FGOutput_Timer
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_Init) for Motor_Init
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_Charge) for Motor_Charge
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_TailWind) for Motor_TailWind
+    mtcontrol.o(i.MC_Control) refers to positioncheck.o(i.RIPD_GetRisingCurrentFunct) for RIPD_GetRisingCurrentFunct
+    mtcontrol.o(i.MC_Control) refers to adc.o(i.Init_ADC) for Init_ADC
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_Align) for Motor_Align
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_Open) for Motor_Open
+    mtcontrol.o(i.MC_Control) refers to foclib.o(PlaceInRAM) for FOC_Algorithm
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.Motor_Stop) for Motor_Stop
+    mtcontrol.o(i.MC_Control) refers to timer.o(i.Cancel_FGTimer) for Cancel_FGTimer
+    mtcontrol.o(i.MC_Control) refers to pwm_drive.o(i.PORT_SixDrive_DisEnable) for PORT_SixDrive_DisEnable
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(i.FaultProcess) for FaultProcess
+    mtcontrol.o(i.MC_Control) refers to mtcontrol.o(.data) for .data
+    mtcontrol.o(i.MC_Control) refers to mtcontrolfunction.o(.bss) for mcCurOffset
+    mtcontrol.o(i.MC_Control) refers to addfunction.o(.bss) for mcSpeedRamp
+    mtcontrol.o(i.MC_Control) refers to positioncheck.o(.bss) for RIPDParam
+    mtcontrol.o(i.MC_Control) refers to foclib.o(.bss) for FocVar
+    mtcontrol.o(i.MC_Control) refers to observers.o(.bss) for myObserverVar
+    mtcontrol.o(i.MC_Control) refers to protect.o(.data) for mcFaultSource
+    mtcontrolfunction.o(PlaceInRAM) refers to foclib.o(i.SingleR_Get_PhaseCurrent) for SingleR_Get_PhaseCurrent
+    mtcontrolfunction.o(i.FOC_Init) refers to picontrol.o(i.PI_Init) for PI_Init
+    mtcontrolfunction.o(i.FOC_Init) refers to memseta.o(.text) for __aeabi_memclr
+    mtcontrolfunction.o(i.FOC_Init) refers to mtcontrolfunction.o(i.mc_bemfobservinit_PLL) for mc_bemfobservinit_PLL
+    mtcontrolfunction.o(i.FOC_Init) refers to foclib.o(.bss) for mcDuty
+    mtcontrolfunction.o(i.FRControl) refers to addfunction.o(.data) for mcFRState
+    mtcontrolfunction.o(i.FRControl) refers to mtcontrol.o(.data) for mcState
+    mtcontrolfunction.o(i.FRControl) refers to addfunction.o(.bss) for mcFocCtrl
+    mtcontrolfunction.o(i.GetCurrentOffset) refers to idiv.o(.text) for __aeabi_idivmod
+    mtcontrolfunction.o(i.GetCurrentOffset) refers to mtcontrolfunction.o(.bss) for .bss
+    mtcontrolfunction.o(i.GetCurrentOffset) refers to mtcontrol.o(.data) for mcState
+    mtcontrolfunction.o(i.GetCurrentOffset) refers to protect.o(.data) for mcFaultSource
+    mtcontrolfunction.o(i.GetCurrentOffset) refers to addfunction.o(.data) for mcSysState
+    mtcontrolfunction.o(i.GetCurrentOffset) refers to cmp.o(.data) for Debug_DAC_Offset
+    mtcontrolfunction.o(i.Motor_Align) refers to foclib.o(PlaceInRAM) for Clake_Cale
+    mtcontrolfunction.o(i.Motor_Align) refers to mytype.o(i.Sin_Cos_Cale) for Sin_Cos_Cale
+    mtcontrolfunction.o(i.Motor_Align) refers to observers.o(PlaceInRAM) for SMO_Observer
+    mtcontrolfunction.o(i.Motor_Align) refers to observers.o(i.Abs_F15) for Abs_F15
+    mtcontrolfunction.o(i.Motor_Align) refers to observers.o(.bss) for myObserverVar
+    mtcontrolfunction.o(i.Motor_Align) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.Motor_Align) refers to foclib.o(.bss) for FocVar
+    mtcontrolfunction.o(i.Motor_Align) refers to foclib.o(.data) for mcUAlBereq
+    mtcontrolfunction.o(i.Motor_Align) refers to addfunction.o(.bss) for mcFocCtrl
+    mtcontrolfunction.o(i.Motor_Align) refers to mtcontrol.o(.data) for mcState
+    mtcontrolfunction.o(i.Motor_Charge) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.Motor_Charge) refers to addfunction.o(.bss) for mcFocCtrl
+    mtcontrolfunction.o(i.Motor_Init) refers to pwm_drive.o(i.PORT_SixDrive_Enable) for PORT_SixDrive_Enable
+    mtcontrolfunction.o(i.Motor_Init) refers to mtcontrolfunction.o(i.VariablesPreInit) for VariablesPreInit
+    mtcontrolfunction.o(i.Motor_Init) refers to mtcontrolfunction.o(i.FOC_Init) for FOC_Init
+    mtcontrolfunction.o(i.Motor_Open) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.Motor_Ready) refers to mtcontrolfunction.o(i.GetCurrentOffset) for GetCurrentOffset
+    mtcontrolfunction.o(i.Motor_Ready) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.Motor_Run) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.Motor_Stop) refers to addfunction.o(.bss) for mcSpeedRamp
+    mtcontrolfunction.o(i.Motor_Stop) refers to mtcontrol.o(.data) for mcState
+    mtcontrolfunction.o(i.Motor_TailWind) refers to tailwinddect.o(i.TailWindDetectInit) for TailWindDetectInit
+    mtcontrolfunction.o(i.Motor_TailWind) refers to foclib.o(PlaceInRAM) for mcTailWind_Handle
+    mtcontrolfunction.o(i.Motor_TailWind) refers to tailwinddect.o(i.FOCTailWindTimeLimit) for FOCTailWindTimeLimit
+    mtcontrolfunction.o(i.Motor_TailWind) refers to tailwinddect.o(i.TailWindSpeedDetect) for TailWindSpeedDetect
+    mtcontrolfunction.o(i.Motor_TailWind) refers to tailwinddect.o(i.FOCTailWindDealwith) for FOCTailWindDealwith
+    mtcontrolfunction.o(i.Motor_TailWind) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to memseta.o(.text) for __aeabi_memclr
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to protect.o(.bss) for mcFaultDect
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to addfunction.o(.bss) for ONOFFTest
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to speedmode.o(.bss) for AdcVarible
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to mtcontrolfunction.o(.bss) for .bss
+    mtcontrolfunction.o(i.MotorcontrolInit) refers to addfunction.o(.data) for mcFRState
+    mtcontrolfunction.o(i.VariablesPreInit) refers to memseta.o(.text) for __aeabi_memclr
+    mtcontrolfunction.o(i.VariablesPreInit) refers to protect.o(.data) for mcFaultSource
+    mtcontrolfunction.o(i.VariablesPreInit) refers to protect.o(.bss) for mcFaultDect
+    mtcontrolfunction.o(i.VariablesPreInit) refers to addfunction.o(.bss) for mcFocCtrl
+    mtcontrolfunction.o(i.VariablesPreInit) refers to mtcontrolfunction.o(.data) for .data
+    mtcontrolfunction.o(i.VariablesPreInit) refers to mtcontrolfunction.o(.bss) for .bss
+    mtcontrolfunction.o(i.mc_bemfobservinit_PLL) refers to observers.o(.bss) for myObserverVar
+    mtcontrolfunction.o(i.mc_bemfobservinit_SMO) refers to observers.o(.bss) for myObserverVar
+    protect.o(i.Fault_Detection) refers to protect.o(i.Fault_phaseloss) for Fault_phaseloss
+    protect.o(i.Fault_Detection) refers to protect.o(i.Fault_OverUnderVoltage) for Fault_OverUnderVoltage
+    protect.o(i.Fault_Detection) refers to protect.o(i.Fault_Stall) for Fault_Stall
+    protect.o(i.Fault_Detection) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_OverCurrentRecover) refers to mtcontrol.o(.data) for mcState
+    protect.o(i.Fault_OverCurrentRecover) refers to protect.o(.data) for .data
+    protect.o(i.Fault_OverCurrentRecover) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_OverUnderVoltage) refers to protect.o(.data) for .data
+    protect.o(i.Fault_OverUnderVoltage) refers to addfunction.o(.bss) for mcFocCtrl
+    protect.o(i.Fault_OverUnderVoltage) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_OverUnderVoltage) refers to mtcontrol.o(.data) for mcState
+    protect.o(i.Fault_Overcurrent) refers to mtcontrol.o(.data) for mcState
+    protect.o(i.Fault_Overcurrent) refers to foclib.o(.bss) for FocVar
+    protect.o(i.Fault_Overcurrent) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_Overcurrent) refers to protect.o(.data) for .data
+    protect.o(i.Fault_Stall) refers to mtcontrol.o(.data) for mcState
+    protect.o(i.Fault_Stall) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_Stall) refers to protect.o(.data) for .data
+    protect.o(i.Fault_Stall) refers to addfunction.o(.bss) for mcFocCtrl
+    protect.o(i.Fault_Start) refers to mtcontrol.o(.data) for mcState
+    protect.o(i.Fault_Start) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_Start) refers to protect.o(.data) for .data
+    protect.o(i.Fault_Start) refers to addfunction.o(.bss) for mcFocCtrl
+    protect.o(i.Fault_phaseloss) refers to mtcontrol.o(.data) for mcState
+    protect.o(i.Fault_phaseloss) refers to protect.o(.bss) for .bss
+    protect.o(i.Fault_phaseloss) refers to addfunction.o(.bss) for mcFocCtrl
+    protect.o(i.Fault_phaseloss) refers to protect.o(.data) for .data
+    tailwinddect.o(i.FOCCloseLoopStart) refers to picontrol.o(.bss) for Iq_Q15Control
+    tailwinddect.o(i.FOCCloseLoopStart) refers to addfunction.o(.bss) for mcFocCtrl
+    tailwinddect.o(i.FOCCloseLoopStart) refers to foclib.o(.bss) for FocVar
+    tailwinddect.o(i.FOCCloseLoopStart) refers to mtcontrol.o(.data) for mcState
+    tailwinddect.o(i.FOCTailWindDealwith) refers to tailwinddect.o(i.SMO_TailWindDealwith) for SMO_TailWindDealwith
+    tailwinddect.o(i.FOCTailWindTimeLimit) refers to tailwinddect.o(.bss) for .bss
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to picontrol.o(i.PI_Init) for PI_Init
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to tailwinddect.o(i.FOCCloseLoopStart) for FOCCloseLoopStart
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to tailwinddect.o(.bss) for .bss
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to mtcontrol.o(.data) for mcState
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to observers.o(.bss) for myObserverVar
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to foclib.o(.bss) for FocVar
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to addfunction.o(.bss) for mcFocCtrl
+    tailwinddect.o(i.SMO_TailWindDealwith) refers to picontrol.o(.bss) for Iq_Q15Control
+    tailwinddect.o(i.TailWindDetectInit) refers to mtcontrolfunction.o(i.FOC_Init) for FOC_Init
+    tailwinddect.o(i.TailWindDetectInit) refers to tailwinddect.o(.bss) for .bss
+    tailwinddect.o(i.TailWindDetectInit) refers to addfunction.o(.bss) for mcFocCtrl
+    tailwinddect.o(i.TailWindDetectInit) refers to picontrol.o(.bss) for Iq_Q15Control
+    tailwinddect.o(i.TailWindDetectInit) refers to foclib.o(.bss) for FocVar
+    tailwinddect.o(i.TailWindSpeedDetect) refers to uidiv.o(.text) for __aeabi_uidivmod
+    tailwinddect.o(i.TailWindSpeedDetect) refers to mtcontrol.o(.data) for mcState
+    tailwinddect.o(i.TailWindSpeedDetect) refers to tailwinddect.o(.bss) for .bss
+    tailwinddect.o(i.TailWindSpeedDetect) refers to observers.o(.bss) for myObserverVar
+    tailwinddect.o(i.TailWindSpeedDetect) refers to tailwinddect.o(.data) for .data
+    foclib.o(PlaceInRAM) refers to idiv.o(.text) for __aeabi_idivmod
+    foclib.o(PlaceInRAM) refers to swm2x1_pwm.o(i.PWM_CmpTrigger) for PWM_CmpTrigger
+    foclib.o(PlaceInRAM) refers to picontrol.o(i.mcPI_CurrentLoop) for mcPI_CurrentLoop
+    foclib.o(PlaceInRAM) refers to mytype.o(i.Sin_Cos_Cale) for Sin_Cos_Cale
+    foclib.o(PlaceInRAM) refers to addfunction.o(.data) for mcFRState
+    foclib.o(PlaceInRAM) refers to speedmode.o(.bss) for AdcVarible
+    foclib.o(PlaceInRAM) refers to foclib.o(.bss) for .bss
+    foclib.o(PlaceInRAM) refers to picontrol.o(.bss) for Id_Q15Control
+    foclib.o(PlaceInRAM) refers to foclib.o(.data) for .data
+    foclib.o(PlaceInRAM) refers to observers.o(.bss) for myObserverVar
+    foclib.o(PlaceInRAM) refers to observers.o(PlaceInRAM) for SMO_Observer
+    foclib.o(PlaceInRAM) refers to addfunction.o(.bss) for mcFocCtrl
+    foclib.o(i.SingleR_Get_PhaseCurrent) refers to foclib.o(.bss) for .bss
+    foclib.o(i.SingleR_Get_PhaseCurrent) refers to mtcontrolfunction.o(.bss) for mcCurOffset
+    foclib.o(i.SingleR_Get_PhaseCurrent) refers to speedmode.o(.bss) for AdcVarible
+    foclib.o(i.VF_Start) refers to foclib.o(PlaceInRAM) for Clake_Cale
+    foclib.o(i.VF_Start) refers to mytype.o(i.Sin_Cos_Cale) for Sin_Cos_Cale
+    foclib.o(i.VF_Start) refers to foclib.o(.bss) for .bss
+    foclib.o(i.VF_Start) refers to foclib.o(.data) for .data
+    foclib.o(i.VF_Start) refers to addfunction.o(.bss) for mcFocCtrl
+    observers.o(PlaceInRAM) refers to observers.o(i.mc_bemfobserv_PLL) for mc_bemfobserv_PLL
+    observers.o(PlaceInRAM) refers to foclib.o(.bss) for FocVar
+    observers.o(PlaceInRAM) refers to foclib.o(.data) for mcAlpha_Belta_fbck
+    observers.o(PlaceInRAM) refers to foclib.o(.data) for mcV_AlphaBelta_req
+    observers.o(PlaceInRAM) refers to observers.o(.bss) for .bss
+    observers.o(PlaceInRAM) refers to addfunction.o(.bss) for mcFocCtrl
+    observers.o(PlaceInRAM) refers to mtcontrol.o(.data) for mcState
+    observers.o(i.mc_bemfobserv_PLL) refers to observers.o(i.__ARM_common_ll_mulss) for __ARM_common_ll_mulss
+    observers.o(i.mc_bemfobserv_PLL) refers to observers.o(.data) for .data
+    observers.o(i.mc_bemfobserv_PLL) refers to positioncheck.o(.bss) for RIPDParam
+    observers.o(i.mc_bemfobserv_PLL) refers to observers.o(.bss) for .bss
+    observers.o(i.mc_bemfobserv_PLL) refers to mytype.o(.constdata) for SinCos_Table
+    observers.o(i.mc_bemfobserv_SMO) refers to observers.o(i.__ARM_common_ll_mulss) for __ARM_common_ll_mulss
+    observers.o(i.mc_bemfobserv_SMO) refers to mytype.o(.constdata) for SinCos_Table
+    picontrol.o(i.PI_Init) refers to picontrol.o(.bss) for .bss
+    mytype.o(i.Sin_Cos_Cale) refers to mytype.o(.constdata) for .constdata
+    positioncheck.o(i.Angle_Dete_DD) refers to positioncheck.o(.data) for .data
+    positioncheck.o(i.Angle_Dete_DD) refers to positioncheck.o(.bss) for .bss
+    positioncheck.o(i.IN_Count) refers to positioncheck.o(.bss) for .bss
+    positioncheck.o(i.IPD_SlopCount) refers to idiv.o(.text) for __aeabi_idivmod
+    positioncheck.o(i.IPD_SlopCount) refers to positioncheck.o(i.RIPD_Angle_Out) for RIPD_Angle_Out
+    positioncheck.o(i.IPD_SlopCount) refers to positioncheck.o(.bss) for .bss
+    positioncheck.o(i.Inport_Plus_PWM) refers to positioncheck.o(.bss) for .bss
+    positioncheck.o(i.Inport_Plus_PWM) refers to foclib.o(.bss) for mcDuty
+    positioncheck.o(i.RIPD_Angle_Count) refers to positioncheck.o(i.RIPD_Angle_Out) for RIPD_Angle_Out
+    positioncheck.o(i.RIPD_Angle_Count) refers to positioncheck.o(.bss) for .bss
+    positioncheck.o(i.RIPD_Angle_Count) refers to positioncheck.o(.data) for .data
+    positioncheck.o(i.RIPD_Angle_Out) refers to positioncheck.o(.bss) for .bss
+    positioncheck.o(i.RIPD_Angle_Out) refers to observers.o(.bss) for myObserverVar
+    positioncheck.o(i.RIPD_GetRisingCurrentFunct) refers to positioncheck.o(i.Inport_Plus_PWM) for Inport_Plus_PWM
+    positioncheck.o(i.RIPD_GetRisingCurrentFunct) refers to swm2x1_gpio.o(i.GPIO_InvBit) for GPIO_InvBit
+    positioncheck.o(i.RIPD_GetRisingCurrentFunct) refers to positioncheck.o(i.IN_Count) for IN_Count
+    positioncheck.o(i.RIPD_GetRisingCurrentFunct) refers to positioncheck.o(i.IPD_SlopCount) for IPD_SlopCount
+    positioncheck.o(i.RIPD_GetRisingCurrentFunct) refers to positioncheck.o(.bss) for .bss
+    adc.o(i.Init_ADC) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    adc.o(i.Init_ADC) refers to swm2x1_adc.o(i.ADC_Init) for ADC_Init
+    adc.o(i.Init_ADC) refers to swm2x1_adc.o(i.ADC_Open) for ADC_Open
+    adc.o(i.SingleR_ADCInject_Deal) refers to swm2x1_adc.o(i.ADC_Start) for ADC_Start
+    adc.o(i.SingleR_ADCInject_Deal) refers to speedmode.o(.bss) for AdcVarible
+    opa.o(i.Init_OPA) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    pwm_drive.o(i.Init_PWM_Drive) refers to swm2x1_pwm.o(i.PWM_Init) for PWM_Init
+    pwm_drive.o(i.Init_PWM_Drive) refers to swm2x1_pwm.o(i.PWM_Start) for PWM_Start
+    pwm_drive.o(i.Init_PWM_Drive) refers to swm2x1_pwm.o(i.PWM_CmpTrigger) for PWM_CmpTrigger
+    pwm_drive.o(i.Init_PWM_Drive) refers to pwm_drive.o(i.PORT_SixDrive_Enable) for PORT_SixDrive_Enable
+    pwm_drive.o(i.PORT_SixDrive_DisEnable) refers to swm2x1_gpio.o(i.GPIO_Init) for GPIO_Init
+    pwm_drive.o(i.PORT_SixDrive_Enable) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    timer.o(i.Cancel_FGTimer) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    timer.o(i.Cancel_FGTimer) refers to swm2x1_timr.o(i.TIMR_Stop) for TIMR_Stop
+    timer.o(i.FGOutput_Timer) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    timer.o(i.FGOutput_Timer) refers to swm2x1_timr.o(i.TIMR_Init) for TIMR_Init
+    timer.o(i.FGOutput_Timer) refers to swm2x1_timr.o(i.TIMR_OC_Init) for TIMR_OC_Init
+    timer.o(i.FGOutput_Timer) refers to swm2x1_timr.o(i.TIMR_Start) for TIMR_Start
+    timer.o(i.FGOutput_Timer) refers to system_swm211.o(.data) for CyclesPerUs
+    cmp.o(i.Init_CMP) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    cmp.o(i.Init_CMP) refers to cmp.o(.data) for .data
+    swm2x1_gpio.o(i.GPIO_Init) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    swm2x1_exti.o(i.EXTI_Init) refers to swm2x1_exti.o(i.EXTI_Close) for EXTI_Close
+    swm2x1_timr.o(i.TIMR_Init) refers to swm2x1_timr.o(i.TIMR_Stop) for TIMR_Stop
+    swm2x1_uart.o(i.UART_GetBaudrate) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_uart.o(i.UART_GetBaudrate) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_uart.o(i.UART_Init) refers to swm2x1_uart.o(i.UART_Close) for UART_Close
+    swm2x1_uart.o(i.UART_Init) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_uart.o(i.UART_Init) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_uart.o(i.UART_SetBaudrate) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_uart.o(i.UART_SetBaudrate) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_adc.o(i.ADC_Init) refers to swm2x1_adc.o(i.ADC_Close) for ADC_Close
+    swm2x1_adc.o(i.ADC_Init) refers to swm2x1_adc.o(.data) for .data
+    swm2x1_adc.o(i.ADC_IntEOCClr) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntEOCDis) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntEOCEn) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntEOCStat) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntOVFClr) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntOVFDis) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntOVFEn) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IntOVFStat) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_IsEOC) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_adc.o(i.ADC_Read) refers to swm2x1_adc.o(i.chn2idx) for chn2idx
+    swm2x1_i2c.o(i.I2C_Init) refers to swm2x1_i2c.o(i.I2C_Close) for I2C_Close
+    swm2x1_i2c.o(i.I2C_Init) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_i2c.o(i.I2C_Init) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_wdt.o(i.WDT_Init) refers to swm2x1_wdt.o(i.WDT_Stop) for WDT_Stop
+    swm2x1_sleep.o(.emb_text) refers to swm2x1_sleep.o(.data) for Code_EnterSleepMode
+    swm2x1_sleep.o(.emb_text) refers to swm2x1_sleep.o(.data) for Code_EnterStopMode
+    swm2x1_spi.o(i.I2S_Init) refers to swm2x1_spi.o(i.I2S_Close) for I2S_Close
+    swm2x1_spi.o(i.I2S_Init) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_spi.o(i.I2S_Init) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_spi.o(i.I2S_MCLKConfig) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_spi.o(i.I2S_MCLKConfig) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_spi.o(i.SPI_Init) refers to swm2x1_spi.o(i.SPI_Close) for SPI_Close
+    swm2x1_qei.o(i.QEI_Init) refers to swm2x1_qei.o(i.QEI_Stop) for QEI_Stop
+    swm2x1_dma.o(i.DMA_CH_Init) refers to swm2x1_dma.o(i.DMA_CH_Close) for DMA_CH_Close
+    swm2x1_can.o(i.CAN_Init) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_can.o(i.CAN_Init) refers to swm2x1_can.o(i.CAN_Close) for CAN_Close
+    swm2x1_can.o(i.CAN_Init) refers to system_swm211.o(.data) for SystemCoreClock
+    swm2x1_can.o(i.CAN_SetBaudrate) refers to uidiv.o(.text) for __aeabi_uidivmod
+    swm2x1_can.o(i.CAN_SetBaudrate) refers to system_swm211.o(.data) for SystemCoreClock
+    swm211_flash.o(i.FLASH_Erase) refers to swm211_flash.o(.data) for .data
+    swm211_flash.o(i.FLASH_Write) refers to swm211_flash.o(.data) for .data
+    swm211_flash.o(i.Flash_Param_at_xMHz) refers to swm211_flash.o(.data) for .data
+    system_swm211.o(i.SystemCoreClockUpdate) refers to uidiv.o(.text) for __aeabi_uidivmod
+    system_swm211.o(i.SystemCoreClockUpdate) refers to system_swm211.o(.data) for .data
+    system_swm211.o(i.SystemInit) refers to swm211_flash.o(i.Flash_Param_at_xMHz) for Flash_Param_at_xMHz
+    system_swm211.o(i.SystemInit) refers to system_swm211.o(i.switchToPLL) for switchToPLL
+    system_swm211.o(i.SystemInit) refers to system_swm211.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    system_swm211.o(i.SystemInit) refers to uidiv.o(.text) for __aeabi_uidivmod
+    system_swm211.o(i.SystemInit) refers to system_swm211.o(.data) for .data
+    system_swm211.o(i.switchTo1M5Hz) refers to system_swm211.o(i.switchTo12MHz) for switchTo12MHz
+    system_swm211.o(i.switchTo32KHz) refers to system_swm211.o(i.switchTo12MHz) for switchTo12MHz
+    system_swm211.o(i.switchToPLL) refers to system_swm211.o(i.switchTo12MHz) for switchTo12MHz
+    system_swm211.o(i.switchToPLL) refers to system_swm211.o(i.PLLInit) for PLLInit
+    system_swm211.o(i.switchToXTAL) refers to system_swm211.o(i.switchTo12MHz) for switchTo12MHz
+    system_swm211.o(i.switchToXTAL) refers to swm2x1_port.o(i.PORT_Init) for PORT_Init
+    startup_swm211.o(RESET) refers to startup_swm211.o(STACK) for __initial_sp
+    startup_swm211.o(RESET) refers to interrupt.o(i.SysTick_Handler) for SysTick_Handler
+    startup_swm211.o(RESET) refers to interrupt.o(i.TIMR0_Handler) for TIMR0_Handler
+    startup_swm211.o(RESET) refers to interrupt.o(i.TIMR1_Handler) for TIMR1_Handler
+    startup_swm211.o(RESET) refers to interrupt.o(PlaceInRAM) for PWM0_Handler
+    startup_swm211.o(RESET) refers to interrupt.o(i.ADC0_Handler) for ADC0_Handler
+    startup_swm211.o(RESET) refers to interrupt.o(i.ACMP_Handler) for ACMP_Handler
+    startup_swm211.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    fadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dscalb.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ffixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_swm211.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_swm211.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.data), (1 bytes).
+    Removing addfunction.o(.rev16_text), (4 bytes).
+    Removing addfunction.o(.revsh_text), (4 bytes).
+    Removing addfunction.o(i.Abs_F16), (14 bytes).
+    Removing addfunction.o(i.Delay_ms), (16 bytes).
+    Removing addfunction.o(i.LPFFunction), (12 bytes).
+    Removing addfunction.o(i.ONOFF_Starttest), (108 bytes).
+    Removing addfunction.o(.data), (2 bytes).
+    Removing addfunction.o(.data), (2 bytes).
+    Removing speedmode.o(.rev16_text), (4 bytes).
+    Removing speedmode.o(.revsh_text), (4 bytes).
+    Removing speedmode.o(i.CLKMode_Control), (240 bytes).
+    Removing speedmode.o(i.PWMMode_Control), (376 bytes).
+    Removing speedmode.o(i.VSPMode_Control), (200 bytes).
+    Removing interrupt.o(.rev16_text), (4 bytes).
+    Removing interrupt.o(.revsh_text), (4 bytes).
+    Removing interrupt.o(.data), (2 bytes).
+    Removing flash.o(.rev16_text), (4 bytes).
+    Removing flash.o(.revsh_text), (4 bytes).
+    Removing flash.o(i.Flash_Find_Offset), (30 bytes).
+    Removing flash.o(i.Flash_ReadDate), (112 bytes).
+    Removing flash.o(i.PowerOff_Save), (128 bytes).
+    Removing flash.o(i.PowerOn_Read), (188 bytes).
+    Removing flash.o(i.Remote_Addr_Save), (112 bytes).
+    Removing flash.o(.bss), (48 bytes).
+    Removing flash.o(.data), (8 bytes).
+    Removing flash.o(.data), (1 bytes).
+    Removing flash.o(.data), (1 bytes).
+    Removing iobeep.o(.rev16_text), (4 bytes).
+    Removing iobeep.o(.revsh_text), (4 bytes).
+    Removing iobeep.o(i.IOBeepInit), (20 bytes).
+    Removing iobeep.o(i.IOBeepPlay), (36 bytes).
+    Removing iobeep.o(i.IOBeepScan), (40 bytes).
+    Removing iobeep.o(i.IOBeepSound), (56 bytes).
+    Removing iobeep.o(i.SetBeepPlay), (20 bytes).
+    Removing iobeep.o(.data), (6 bytes).
+    Removing irscan.o(.rev16_text), (4 bytes).
+    Removing irscan.o(.revsh_text), (4 bytes).
+    Removing irscan.o(i.Remote_Decode), (348 bytes).
+    Removing irscan.o(.bss), (60 bytes).
+    Removing ircontrol.o(.rev16_text), (4 bytes).
+    Removing ircontrol.o(.revsh_text), (4 bytes).
+    Removing ircontrol.o(i.AutoPowerControl), (96 bytes).
+    Removing ircontrol.o(i.LEDControl), (36 bytes).
+    Removing ircontrol.o(i.NatureWindControl), (80 bytes).
+    Removing ircontrol.o(i.RemoteControl), (608 bytes).
+    Removing ircontrol.o(i.SleepWindControl), (88 bytes).
+    Removing ircontrol.o(.data), (32 bytes).
+    Removing mtcontrol.o(.rev16_text), (4 bytes).
+    Removing mtcontrol.o(.revsh_text), (4 bytes).
+    Removing mtcontrol.o(.data), (2 bytes).
+    Removing mtcontrol.o(.data), (2 bytes).
+    Removing mtcontrolfunction.o(.rev16_text), (4 bytes).
+    Removing mtcontrolfunction.o(.revsh_text), (4 bytes).
+    Removing mtcontrolfunction.o(i.FRControl), (84 bytes).
+    Removing mtcontrolfunction.o(i.Motor_Brake), (2 bytes).
+    Removing mtcontrolfunction.o(i.Motor_Break), (40 bytes).
+    Removing mtcontrolfunction.o(i.Motor_Run), (20 bytes).
+    Removing mtcontrolfunction.o(i.mc_bemfobservinit_SMO), (156 bytes).
+    Removing protect.o(.rev16_text), (4 bytes).
+    Removing protect.o(.revsh_text), (4 bytes).
+    Removing protect.o(i.CurrentLimit_Func), (2 bytes).
+    Removing protect.o(i.Fault_OverCurrentRecover), (80 bytes).
+    Removing protect.o(i.Fault_Start), (284 bytes).
+    Removing protect.o(i.Limit_Func), (2 bytes).
+    Removing tailwinddect.o(.rev16_text), (4 bytes).
+    Removing tailwinddect.o(.revsh_text), (4 bytes).
+    Removing foclib.o(.rev16_text), (4 bytes).
+    Removing foclib.o(.revsh_text), (4 bytes).
+    Removing foclib.o(i.VF_Start), (96 bytes).
+    Removing foclib.o(.constdata), (174 bytes).
+    Removing foclib.o(.data), (4 bytes).
+    Removing foclib.o(.data), (4 bytes).
+    Removing foclib.o(.data), (4 bytes).
+    Removing observers.o(.rev16_text), (4 bytes).
+    Removing observers.o(.revsh_text), (4 bytes).
+    Removing observers.o(i.mc_bemfobserv_SMO), (644 bytes).
+    Removing observers.o(.data), (2 bytes).
+    Removing picontrol.o(.rev16_text), (4 bytes).
+    Removing picontrol.o(.revsh_text), (4 bytes).
+    Removing picontrol.o(.bss), (40 bytes).
+    Removing mytype.o(i.LimitOutput), (16 bytes).
+    Removing mytype.o(i.SqrtFunc), (62 bytes).
+    Removing positioncheck.o(.rev16_text), (4 bytes).
+    Removing positioncheck.o(.revsh_text), (4 bytes).
+    Removing positioncheck.o(i.Angle_Dete_DD), (168 bytes).
+    Removing positioncheck.o(i.RIPD_Angle_Count), (1008 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (2 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (12 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing positioncheck.o(.data), (4 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing adc.o(.rev16_text), (4 bytes).
+    Removing adc.o(.revsh_text), (4 bytes).
+    Removing opa.o(.rev16_text), (4 bytes).
+    Removing opa.o(.revsh_text), (4 bytes).
+    Removing pwm_drive.o(.rev16_text), (4 bytes).
+    Removing pwm_drive.o(.revsh_text), (4 bytes).
+    Removing timer.o(.rev16_text), (4 bytes).
+    Removing timer.o(.revsh_text), (4 bytes).
+    Removing cmp.o(.rev16_text), (4 bytes).
+    Removing cmp.o(.revsh_text), (4 bytes).
+    Removing cmp.o(i.Init_CMP), (128 bytes).
+    Removing flash_1.o(.rev16_text), (4 bytes).
+    Removing flash_1.o(.revsh_text), (4 bytes).
+    Removing flash_1.o(i.Init_Flash), (2 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(i.Init_Uart), (2 bytes).
+    Removing swm2x1_port.o(.rev16_text), (4 bytes).
+    Removing swm2x1_port.o(.revsh_text), (4 bytes).
+    Removing swm2x1_gpio.o(.rev16_text), (4 bytes).
+    Removing swm2x1_gpio.o(.revsh_text), (4 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_AtomicClrBit), (10 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_AtomicClrBits), (28 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_AtomicInvBit), (14 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_AtomicInvBits), (28 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_AtomicSetBit), (10 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_AtomicSetBits), (28 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_ClrBit), (12 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_ClrBits), (24 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_GetBit), (10 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_GetBits), (20 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_InvBits), (24 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_SetBit), (12 bytes).
+    Removing swm2x1_gpio.o(i.GPIO_SetBits), (24 bytes).
+    Removing swm2x1_exti.o(.rev16_text), (4 bytes).
+    Removing swm2x1_exti.o(.revsh_text), (4 bytes).
+    Removing swm2x1_exti.o(i.EXTI_Clear), (8 bytes).
+    Removing swm2x1_exti.o(i.EXTI_Close), (12 bytes).
+    Removing swm2x1_exti.o(i.EXTI_Init), (98 bytes).
+    Removing swm2x1_exti.o(i.EXTI_Open), (12 bytes).
+    Removing swm2x1_exti.o(i.EXTI_RawState), (10 bytes).
+    Removing swm2x1_exti.o(i.EXTI_State), (10 bytes).
+    Removing swm2x1_timr.o(.rev16_text), (4 bytes).
+    Removing swm2x1_timr.o(.revsh_text), (4 bytes).
+    Removing swm2x1_timr.o(i.TIMR_Halt), (6 bytes).
+    Removing swm2x1_timr.o(i.TIMR_IC_CaptureH_INTDis), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_IC_CaptureH_INTEn), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_IC_CaptureL_INTDis), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_IC_CaptureL_INTEn), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_IC_Init), (112 bytes).
+    Removing swm2x1_timr.o(i.TIMR_INTDis), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_INTEn), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_INTStat), (8 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_GetMatch), (4 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_INTClr), (6 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_INTDis), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_INTEn), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_INTStat), (8 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_OutputDis), (32 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_OutputEn), (10 bytes).
+    Removing swm2x1_timr.o(i.TIMR_OC_SetMatch), (4 bytes).
+    Removing swm2x1_timr.o(i.TIMR_Resume), (6 bytes).
+    Removing swm2x1_uart.o(.rev16_text), (4 bytes).
+    Removing swm2x1_uart.o(.revsh_text), (4 bytes).
+    Removing swm2x1_uart.o(i.UART_ABRIsDone), (24 bytes).
+    Removing swm2x1_uart.o(i.UART_ABRStart), (90 bytes).
+    Removing swm2x1_uart.o(i.UART_CTSConfig), (24 bytes).
+    Removing swm2x1_uart.o(i.UART_CTSLineState), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_Close), (12 bytes).
+    Removing swm2x1_uart.o(i.UART_GetBaudrate), (32 bytes).
+    Removing swm2x1_uart.o(i.UART_INTRXThresholdDis), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_INTRXThresholdEn), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_INTRXThresholdStat), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTXDoneDis), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTXDoneEn), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTXDoneStat), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTXThresholdDis), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTXThresholdEn), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTXThresholdStat), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTimeoutDis), (12 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTimeoutEn), (12 bytes).
+    Removing swm2x1_uart.o(i.UART_INTTimeoutStat), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_Init), (264 bytes).
+    Removing swm2x1_uart.o(i.UART_IsRXFIFOEmpty), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_IsTXBusy), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_IsTXFIFOFull), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_LINConfig), (50 bytes).
+    Removing swm2x1_uart.o(i.UART_LINGenerate), (10 bytes).
+    Removing swm2x1_uart.o(i.UART_LINIsDetected), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_LINIsGenerated), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_Open), (12 bytes).
+    Removing swm2x1_uart.o(i.UART_RTSConfig), (30 bytes).
+    Removing swm2x1_uart.o(i.UART_RTSLineState), (8 bytes).
+    Removing swm2x1_uart.o(i.UART_ReadByte), (20 bytes).
+    Removing swm2x1_uart.o(i.UART_SetBaudrate), (40 bytes).
+    Removing swm2x1_uart.o(i.UART_WriteByte), (4 bytes).
+    Removing swm2x1_adc.o(.rev16_text), (4 bytes).
+    Removing swm2x1_adc.o(.revsh_text), (4 bytes).
+    Removing swm2x1_adc.o(i.ADC_ChnSelect), (24 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntEOCClr), (20 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntEOCDis), (24 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntEOCEn), (24 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntEOCStat), (30 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntOVFClr), (22 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntOVFDis), (26 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntOVFEn), (26 bytes).
+    Removing swm2x1_adc.o(i.ADC_IntOVFStat), (32 bytes).
+    Removing swm2x1_adc.o(i.ADC_IsEOC), (22 bytes).
+    Removing swm2x1_adc.o(i.ADC_Read), (26 bytes).
+    Removing swm2x1_adc.o(i.ADC_Stop), (10 bytes).
+    Removing swm2x1_adc.o(i.chn2idx), (118 bytes).
+    Removing swm2x1_i2c.o(.rev16_text), (4 bytes).
+    Removing swm2x1_i2c.o(.revsh_text), (4 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Close), (10 bytes).
+    Removing swm2x1_i2c.o(i.I2C_INTClr), (4 bytes).
+    Removing swm2x1_i2c.o(i.I2C_INTDis), (8 bytes).
+    Removing swm2x1_i2c.o(i.I2C_INTEn), (8 bytes).
+    Removing swm2x1_i2c.o(i.I2C_INTStat), (14 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Init), (264 bytes).
+    Removing swm2x1_i2c.o(i.I2C_IsAck), (10 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Open), (10 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Read), (44 bytes).
+    Removing swm2x1_i2c.o(i.I2C_ReadDone), (10 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Start), (38 bytes).
+    Removing swm2x1_i2c.o(i.I2C_StartDone), (10 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Stop), (24 bytes).
+    Removing swm2x1_i2c.o(i.I2C_StopDone), (10 bytes).
+    Removing swm2x1_i2c.o(i.I2C_Write), (38 bytes).
+    Removing swm2x1_i2c.o(i.I2C_WriteDone), (10 bytes).
+    Removing swm2x1_pwm.o(.rev16_text), (4 bytes).
+    Removing swm2x1_pwm.o(.revsh_text), (4 bytes).
+    Removing swm2x1_pwm.o(i.PWM_BrkConfig), (106 bytes).
+    Removing swm2x1_pwm.o(i.PWM_BrkInPolarity), (28 bytes).
+    Removing swm2x1_pwm.o(i.PWM_BrkIntClr), (12 bytes).
+    Removing swm2x1_pwm.o(i.PWM_BrkIntDis), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_BrkIntEn), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_BrkIntStat), (12 bytes).
+    Removing swm2x1_pwm.o(i.PWM_GetDeadzone), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_GetHDuty), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_GetHDuty2), (24 bytes).
+    Removing swm2x1_pwm.o(i.PWM_GetPeriod), (8 bytes).
+    Removing swm2x1_pwm.o(i.PWM_IntDis), (8 bytes).
+    Removing swm2x1_pwm.o(i.PWM_IntEn), (8 bytes).
+    Removing swm2x1_pwm.o(i.PWM_IntStat), (6 bytes).
+    Removing swm2x1_pwm.o(i.PWM_OutMask), (112 bytes).
+    Removing swm2x1_pwm.o(i.PWM_OvfTrigger), (12 bytes).
+    Removing swm2x1_pwm.o(i.PWM_ReloadDis), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_ReloadEn), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_Restart), (12 bytes).
+    Removing swm2x1_pwm.o(i.PWM_SetDeadzone), (12 bytes).
+    Removing swm2x1_pwm.o(i.PWM_SetHDuty), (12 bytes).
+    Removing swm2x1_pwm.o(i.PWM_SetHDuty2), (16 bytes).
+    Removing swm2x1_pwm.o(i.PWM_SetPeriod), (6 bytes).
+    Removing swm2x1_pwm.o(i.PWM_Stop), (16 bytes).
+    Removing swm2x1_wdt.o(.rev16_text), (4 bytes).
+    Removing swm2x1_wdt.o(.revsh_text), (4 bytes).
+    Removing swm2x1_wdt.o(i.WDT_Feed), (6 bytes).
+    Removing swm2x1_wdt.o(i.WDT_INTClr), (6 bytes).
+    Removing swm2x1_wdt.o(i.WDT_INTStat), (4 bytes).
+    Removing swm2x1_wdt.o(i.WDT_Init), (132 bytes).
+    Removing swm2x1_wdt.o(i.WDT_Start), (10 bytes).
+    Removing swm2x1_wdt.o(i.WDT_Stop), (10 bytes).
+    Removing swm2x1_sleep.o(.rev16_text), (4 bytes).
+    Removing swm2x1_sleep.o(.revsh_text), (4 bytes).
+    Removing swm2x1_sleep.o(.emb_text), (40 bytes).
+    Removing swm2x1_sleep.o(.data), (20 bytes).
+    Removing swm2x1_sleep.o(.data), (20 bytes).
+    Removing swm2x1_div.o(.rev16_text), (4 bytes).
+    Removing swm2x1_div.o(.revsh_text), (4 bytes).
+    Removing swm2x1_cordic.o(.rev16_text), (4 bytes).
+    Removing swm2x1_cordic.o(.revsh_text), (4 bytes).
+    Removing swm2x1_spi.o(.rev16_text), (4 bytes).
+    Removing swm2x1_spi.o(.revsh_text), (4 bytes).
+    Removing swm2x1_spi.o(i.I2S_Close), (16 bytes).
+    Removing swm2x1_spi.o(i.I2S_Init), (260 bytes).
+    Removing swm2x1_spi.o(i.I2S_MCLKConfig), (60 bytes).
+    Removing swm2x1_spi.o(i.I2S_Open), (16 bytes).
+    Removing swm2x1_spi.o(i.SPI_Close), (10 bytes).
+    Removing swm2x1_spi.o(i.SPI_INTClr), (4 bytes).
+    Removing swm2x1_spi.o(i.SPI_INTDis), (8 bytes).
+    Removing swm2x1_spi.o(i.SPI_INTEn), (8 bytes).
+    Removing swm2x1_spi.o(i.SPI_INTStat), (14 bytes).
+    Removing swm2x1_spi.o(i.SPI_Init), (296 bytes).
+    Removing swm2x1_spi.o(i.SPI_IsRXEmpty), (10 bytes).
+    Removing swm2x1_spi.o(i.SPI_IsTXEmpty), (8 bytes).
+    Removing swm2x1_spi.o(i.SPI_IsTXFull), (10 bytes).
+    Removing swm2x1_spi.o(i.SPI_Open), (10 bytes).
+    Removing swm2x1_spi.o(i.SPI_Read), (4 bytes).
+    Removing swm2x1_spi.o(i.SPI_ReadWrite), (12 bytes).
+    Removing swm2x1_spi.o(i.SPI_Write), (4 bytes).
+    Removing swm2x1_spi.o(i.SPI_WriteWithWait), (18 bytes).
+    Removing swm2x1_qei.o(.rev16_text), (4 bytes).
+    Removing swm2x1_qei.o(.revsh_text), (4 bytes).
+    Removing swm2x1_qei.o(i.QEI_Init), (116 bytes).
+    Removing swm2x1_qei.o(i.QEI_IntClr), (4 bytes).
+    Removing swm2x1_qei.o(i.QEI_IntDis), (8 bytes).
+    Removing swm2x1_qei.o(i.QEI_IntEn), (28 bytes).
+    Removing swm2x1_qei.o(i.QEI_IntStat), (6 bytes).
+    Removing swm2x1_qei.o(i.QEI_Start), (10 bytes).
+    Removing swm2x1_qei.o(i.QEI_Stop), (10 bytes).
+    Removing swm2x1_dma.o(.rev16_text), (4 bytes).
+    Removing swm2x1_dma.o(.revsh_text), (4 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_Close), (24 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_INTClr), (16 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_INTDis), (20 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_INTEn), (20 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_INTStat), (24 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_Init), (208 bytes).
+    Removing swm2x1_dma.o(i.DMA_CH_Open), (24 bytes).
+    Removing swm2x1_can.o(.rev16_text), (4 bytes).
+    Removing swm2x1_can.o(.revsh_text), (4 bytes).
+    Removing swm2x1_can.o(i.CAN_AbortTransmit), (6 bytes).
+    Removing swm2x1_can.o(i.CAN_Close), (10 bytes).
+    Removing swm2x1_can.o(i.CAN_INTDis), (8 bytes).
+    Removing swm2x1_can.o(i.CAN_INTEn), (8 bytes).
+    Removing swm2x1_can.o(i.CAN_INTStat), (4 bytes).
+    Removing swm2x1_can.o(i.CAN_Init), (172 bytes).
+    Removing swm2x1_can.o(i.CAN_Open), (10 bytes).
+    Removing swm2x1_can.o(i.CAN_RXDataAvailable), (8 bytes).
+    Removing swm2x1_can.o(i.CAN_Receive), (128 bytes).
+    Removing swm2x1_can.o(i.CAN_SetBaudrate), (56 bytes).
+    Removing swm2x1_can.o(i.CAN_SetFilter16b), (64 bytes).
+    Removing swm2x1_can.o(i.CAN_SetFilter32b), (52 bytes).
+    Removing swm2x1_can.o(i.CAN_TXBufferReady), (8 bytes).
+    Removing swm2x1_can.o(i.CAN_TXComplete), (8 bytes).
+    Removing swm2x1_can.o(i.CAN_TXSuccess), (8 bytes).
+    Removing swm2x1_can.o(i.CAN_Transmit), (122 bytes).
+    Removing swm2x1_can.o(i.CAN_TransmitRequest), (54 bytes).
+    Removing swm211_flash.o(.rev16_text), (4 bytes).
+    Removing swm211_flash.o(.revsh_text), (4 bytes).
+    Removing swm211_flash.o(i.FLASH_Erase), (44 bytes).
+    Removing swm211_flash.o(i.FLASH_Write), (40 bytes).
+    Removing system_swm211.o(.rev16_text), (4 bytes).
+    Removing system_swm211.o(.revsh_text), (4 bytes).
+    Removing system_swm211.o(i.switchTo1M5Hz), (46 bytes).
+    Removing system_swm211.o(i.switchTo32KHz), (52 bytes).
+    Removing system_swm211.o(i.switchToXTAL), (152 bytes).
+    Removing startup_swm211.o(HEAP), (0 bytes).
+    Removing fadd.o(.text), (178 bytes).
+    Removing fmul.o(.text), (122 bytes).
+    Removing fflti.o(.text), (22 bytes).
+    Removing ffixi.o(.text), (50 bytes).
+    Removing d2f.o(.text), (56 bytes).
+    Removing fepilogue.o(.text), (130 bytes).
+
+353 unused section(s) (total 12587 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      288  startup_swm211.o(RESET)
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixi.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixi.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  fflti.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dflti.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpscalb.c              0x00000000   Number         0  dscalb.o ABSOLUTE
+    APP\\source\\Application\\AddFunction.c  0x00000000   Number         0  addfunction.o ABSOLUTE
+    APP\\source\\Application\\Flash.c        0x00000000   Number         0  flash.o ABSOLUTE
+    APP\\source\\Application\\IOBeep.c       0x00000000   Number         0  iobeep.o ABSOLUTE
+    APP\\source\\Application\\IRControl.c    0x00000000   Number         0  ircontrol.o ABSOLUTE
+    APP\\source\\Application\\IRScan.c       0x00000000   Number         0  irscan.o ABSOLUTE
+    APP\\source\\Application\\Interrupt.c    0x00000000   Number         0  interrupt.o ABSOLUTE
+    APP\\source\\Application\\SpeedMode.c    0x00000000   Number         0  speedmode.o ABSOLUTE
+    APP\\source\\Application\\main.c         0x00000000   Number         0  main.o ABSOLUTE
+    APP\\source\\FOC\\FOCLib.c               0x00000000   Number         0  foclib.o ABSOLUTE
+    APP\\source\\FOC\\Observers.c            0x00000000   Number         0  observers.o ABSOLUTE
+    APP\\source\\FOC\\PIControl.c            0x00000000   Number         0  picontrol.o ABSOLUTE
+    APP\\source\\FOC\\Positioncheck.c        0x00000000   Number         0  positioncheck.o ABSOLUTE
+    APP\\source\\Function\\MTControl.c       0x00000000   Number         0  mtcontrol.o ABSOLUTE
+    APP\\source\\Function\\MTControlFunction.c 0x00000000   Number         0  mtcontrolfunction.o ABSOLUTE
+    APP\\source\\Function\\Protect.c         0x00000000   Number         0  protect.o ABSOLUTE
+    APP\\source\\Function\\TailWindDect.c    0x00000000   Number         0  tailwinddect.o ABSOLUTE
+    APP\\source\\Hardware\\ADC.c             0x00000000   Number         0  adc.o ABSOLUTE
+    APP\\source\\Hardware\\CMP.c             0x00000000   Number         0  cmp.o ABSOLUTE
+    APP\\source\\Hardware\\FLASH.c           0x00000000   Number         0  flash_1.o ABSOLUTE
+    APP\\source\\Hardware\\GPIO.c            0x00000000   Number         0  gpio.o ABSOLUTE
+    APP\\source\\Hardware\\OPA.c             0x00000000   Number         0  opa.o ABSOLUTE
+    APP\\source\\Hardware\\PWM_DRIVE.c       0x00000000   Number         0  pwm_drive.o ABSOLUTE
+    APP\\source\\Hardware\\TIMER.c           0x00000000   Number         0  timer.o ABSOLUTE
+    APP\\source\\Hardware\\UART.c            0x00000000   Number         0  uart.o ABSOLUTE
+    APP\source\Application\AddFunction.c     0x00000000   Number         0  addfunction.o ABSOLUTE
+    APP\source\Application\Flash.c           0x00000000   Number         0  flash.o ABSOLUTE
+    APP\source\Application\IOBeep.c          0x00000000   Number         0  iobeep.o ABSOLUTE
+    APP\source\Application\IRControl.c       0x00000000   Number         0  ircontrol.o ABSOLUTE
+    APP\source\Application\IRScan.c          0x00000000   Number         0  irscan.o ABSOLUTE
+    APP\source\Application\Interrupt.c       0x00000000   Number         0  interrupt.o ABSOLUTE
+    APP\source\Application\SpeedMode.c       0x00000000   Number         0  speedmode.o ABSOLUTE
+    APP\source\Application\main.c            0x00000000   Number         0  main.o ABSOLUTE
+    APP\source\FOC\FOCLib.c                  0x00000000   Number         0  foclib.o ABSOLUTE
+    APP\source\FOC\MyType.c                  0x00000000   Number         0  mytype.o ABSOLUTE
+    APP\source\FOC\Observers.c               0x00000000   Number         0  observers.o ABSOLUTE
+    APP\source\FOC\PIControl.c               0x00000000   Number         0  picontrol.o ABSOLUTE
+    APP\source\FOC\Positioncheck.c           0x00000000   Number         0  positioncheck.o ABSOLUTE
+    APP\source\Function\MTControl.c          0x00000000   Number         0  mtcontrol.o ABSOLUTE
+    APP\source\Function\MTControlFunction.c  0x00000000   Number         0  mtcontrolfunction.o ABSOLUTE
+    APP\source\Function\Protect.c            0x00000000   Number         0  protect.o ABSOLUTE
+    APP\source\Function\TailWindDect.c       0x00000000   Number         0  tailwinddect.o ABSOLUTE
+    APP\source\Hardware\ADC.c                0x00000000   Number         0  adc.o ABSOLUTE
+    APP\source\Hardware\CMP.c                0x00000000   Number         0  cmp.o ABSOLUTE
+    APP\source\Hardware\FLASH.c              0x00000000   Number         0  flash_1.o ABSOLUTE
+    APP\source\Hardware\GPIO.c               0x00000000   Number         0  gpio.o ABSOLUTE
+    APP\source\Hardware\OPA.c                0x00000000   Number         0  opa.o ABSOLUTE
+    APP\source\Hardware\PWM_DRIVE.c          0x00000000   Number         0  pwm_drive.o ABSOLUTE
+    APP\source\Hardware\TIMER.c              0x00000000   Number         0  timer.o ABSOLUTE
+    APP\source\Hardware\UART.c               0x00000000   Number         0  uart.o ABSOLUTE
+    CSL\CMSIS\DeviceSupport\startup\arm\startup_SWM211.s 0x00000000   Number         0  startup_swm211.o ABSOLUTE
+    CSL\CMSIS\DeviceSupport\system_SWM211.c  0x00000000   Number         0  system_swm211.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM201_flash.c 0x00000000   Number         0  swm201_flash.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM211_flash.c 0x00000000   Number         0  swm211_flash.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.c 0x00000000   Number         0  swm2x1_adc.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.c 0x00000000   Number         0  swm2x1_can.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.c 0x00000000   Number         0  swm2x1_cordic.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.c 0x00000000   Number         0  swm2x1_div.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.c 0x00000000   Number         0  swm2x1_dma.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.c 0x00000000   Number         0  swm2x1_exti.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.c 0x00000000   Number         0  swm2x1_gpio.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.c 0x00000000   Number         0  swm2x1_i2c.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_port.c 0x00000000   Number         0  swm2x1_port.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.c 0x00000000   Number         0  swm2x1_pwm.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.c 0x00000000   Number         0  swm2x1_qei.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_rtc.c 0x00000000   Number         0  swm2x1_rtc.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.c 0x00000000   Number         0  swm2x1_sleep.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.c 0x00000000   Number         0  swm2x1_spi.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.c 0x00000000   Number         0  swm2x1_timr.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.c 0x00000000   Number         0  swm2x1_uart.o ABSOLUTE
+    CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.c 0x00000000   Number         0  swm2x1_wdt.o ABSOLUTE
+    CSL\\CMSIS\\DeviceSupport\\system_SWM211.c 0x00000000   Number         0  system_swm211.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM211_flash.c 0x00000000   Number         0  swm211_flash.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_adc.c 0x00000000   Number         0  swm2x1_adc.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_can.c 0x00000000   Number         0  swm2x1_can.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_cordic.c 0x00000000   Number         0  swm2x1_cordic.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_div.c 0x00000000   Number         0  swm2x1_div.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_dma.c 0x00000000   Number         0  swm2x1_dma.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_exti.c 0x00000000   Number         0  swm2x1_exti.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_gpio.c 0x00000000   Number         0  swm2x1_gpio.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_i2c.c 0x00000000   Number         0  swm2x1_i2c.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_port.c 0x00000000   Number         0  swm2x1_port.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_pwm.c 0x00000000   Number         0  swm2x1_pwm.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_qei.c 0x00000000   Number         0  swm2x1_qei.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_sleep.c 0x00000000   Number         0  swm2x1_sleep.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_spi.c 0x00000000   Number         0  swm2x1_spi.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_timr.c 0x00000000   Number         0  swm2x1_timr.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_uart.c 0x00000000   Number         0  swm2x1_uart.o ABSOLUTE
+    CSL\\SWM2X1_StdPeriph_Driver\\SWM2X1_wdt.c 0x00000000   Number         0  swm2x1_wdt.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000120   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000120   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000124   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000128   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000128   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000128   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000130   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000130   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000130   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000130   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000134   Section        0  uidiv.o(.text)
+    .text                                    0x00000160   Section        0  idiv.o(.text)
+    .text                                    0x00000188   Section        0  memseta.o(.text)
+    .text                                    0x000001ac   Section        0  dadd.o(.text)
+    .text                                    0x00000310   Section        0  dmul.o(.text)
+    .text                                    0x000003e0   Section        0  ddiv.o(.text)
+    .text                                    0x000004d0   Section        0  dscalb.o(.text)
+    .text                                    0x000004fc   Section        0  dflti.o(.text)
+    .text                                    0x00000524   Section        0  dfltui.o(.text)
+    .text                                    0x00000540   Section        0  dfixi.o(.text)
+    .text                                    0x00000588   Section        0  dfixui.o(.text)
+    .text                                    0x000005c4   Section        0  llshl.o(.text)
+    .text                                    0x000005e4   Section        0  llushr.o(.text)
+    .text                                    0x00000606   Section        0  llsshr.o(.text)
+    .text                                    0x0000062c   Section        0  depilogue.o(.text)
+    .text                                    0x0000062c   Section        0  iusefp.o(.text)
+    .text                                    0x000006ec   Section       36  init.o(.text)
+    PlaceInRAM                               0x00000710   Section        0  interrupt.o(PlaceInRAM)
+    PlaceInRAM                               0x0000072c   Section        0  mtcontrolfunction.o(PlaceInRAM)
+    PlaceInRAM                               0x00000734   Section        0  foclib.o(PlaceInRAM)
+    PlaceInRAM                               0x00000ca8   Section        0  observers.o(PlaceInRAM)
+    i.ACMP_Handler                           0x00000d08   Section        0  interrupt.o(i.ACMP_Handler)
+    i.ADC0_Handler                           0x00000d4c   Section        0  interrupt.o(i.ADC0_Handler)
+    i.ADC_Close                              0x00000d90   Section        0  swm2x1_adc.o(i.ADC_Close)
+    i.ADC_Init                               0x00000d9c   Section        0  swm2x1_adc.o(i.ADC_Init)
+    i.ADC_Open                               0x00000ff0   Section        0  swm2x1_adc.o(i.ADC_Open)
+    i.ADC_Start                              0x00000ffc   Section        0  swm2x1_adc.o(i.ADC_Start)
+    i.Abs_F15                                0x00001002   Section        0  observers.o(i.Abs_F15)
+    i.Base_1ms_TIM                           0x00001010   Section        0  addfunction.o(i.Base_1ms_TIM)
+    i.CORDIC_Init                            0x0000108c   Section        0  swm2x1_cordic.o(i.CORDIC_Init)
+    i.Cancel_FGTimer                         0x000010a4   Section        0  timer.o(i.Cancel_FGTimer)
+    i.DIV_Init                               0x000010c4   Section        0  swm2x1_div.o(i.DIV_Init)
+    i.FGOutput_Timer                         0x000010dc   Section        0  timer.o(i.FGOutput_Timer)
+    i.FOCCloseLoopStart                      0x00001128   Section        0  tailwinddect.o(i.FOCCloseLoopStart)
+    i.FOCTailWindDealwith                    0x0000117c   Section        0  tailwinddect.o(i.FOCTailWindDealwith)
+    i.FOCTailWindTimeLimit                   0x00001184   Section        0  tailwinddect.o(i.FOCTailWindTimeLimit)
+    i.FOC_Init                               0x000011c0   Section        0  mtcontrolfunction.o(i.FOC_Init)
+    i.FaultProcess                           0x0000121c   Section        0  mtcontrolfunction.o(i.FaultProcess)
+    i.Fault_Detection                        0x0000122c   Section        0  protect.o(i.Fault_Detection)
+    i.Fault_OverUnderVoltage                 0x0000126c   Section        0  protect.o(i.Fault_OverUnderVoltage)
+    i.Fault_Overcurrent                      0x00001358   Section        0  protect.o(i.Fault_Overcurrent)
+    i.Fault_Stall                            0x00001440   Section        0  protect.o(i.Fault_Stall)
+    i.Fault_phaseloss                        0x0000153c   Section        0  protect.o(i.Fault_phaseloss)
+    i.Flash_Param_at_xMHz                    0x000016ac   Section        0  swm211_flash.o(i.Flash_Param_at_xMHz)
+    i.GPIO_Init                              0x000016e4   Section        0  swm2x1_gpio.o(i.GPIO_Init)
+    i.GPIO_InvBit                            0x000017b8   Section        0  swm2x1_gpio.o(i.GPIO_InvBit)
+    i.GetCurrentOffset                       0x000017c4   Section        0  mtcontrolfunction.o(i.GetCurrentOffset)
+    i.HardwareInit                           0x0000186c   Section        0  main.o(i.HardwareInit)
+    i.IN_Count                               0x000018dc   Section        0  positioncheck.o(i.IN_Count)
+    i.IPD_SlopCount                          0x00001944   Section        0  positioncheck.o(i.IPD_SlopCount)
+    i.Init_ADC                               0x00001c8c   Section        0  adc.o(i.Init_ADC)
+    i.Init_GPIO                              0x00001d50   Section        0  gpio.o(i.Init_GPIO)
+    i.Init_OPA                               0x00001d54   Section        0  opa.o(i.Init_OPA)
+    i.Init_PWM_Drive                         0x00001d9c   Section        0  pwm_drive.o(i.Init_PWM_Drive)
+    i.Init_Timer                             0x00001e54   Section        0  timer.o(i.Init_Timer)
+    i.Inport_Plus_PWM                        0x00001e58   Section        0  positioncheck.o(i.Inport_Plus_PWM)
+    i.LPF_Func                               0x00001f9c   Section        0  addfunction.o(i.LPF_Func)
+    i.LPF_General                            0x000020e0   Section        0  addfunction.o(i.LPF_General)
+    i.MC_Control                             0x000020ec   Section        0  mtcontrol.o(i.MC_Control)
+    i.Motor_Align                            0x0000220c   Section        0  mtcontrolfunction.o(i.Motor_Align)
+    i.Motor_Charge                           0x0000230c   Section        0  mtcontrolfunction.o(i.Motor_Charge)
+    i.Motor_Init                             0x000023a0   Section        0  mtcontrolfunction.o(i.Motor_Init)
+    i.Motor_Open                             0x000023b0   Section        0  mtcontrolfunction.o(i.Motor_Open)
+    i.Motor_Ready                            0x000023c4   Section        0  mtcontrolfunction.o(i.Motor_Ready)
+    i.Motor_Stop                             0x000023ec   Section        0  mtcontrolfunction.o(i.Motor_Stop)
+    i.Motor_TailWind                         0x00002410   Section        0  mtcontrolfunction.o(i.Motor_TailWind)
+    i.MotorcontrolInit                       0x00002440   Section        0  mtcontrolfunction.o(i.MotorcontrolInit)
+    i.PI_Init                                0x000024ec   Section        0  picontrol.o(i.PI_Init)
+    i.PLLInit                                0x00002584   Section        0  system_swm211.o(i.PLLInit)
+    i.PORT_Init                              0x000025cc   Section        0  swm2x1_port.o(i.PORT_Init)
+    i.PORT_SixDrive_DisEnable                0x00002620   Section        0  pwm_drive.o(i.PORT_SixDrive_DisEnable)
+    i.PORT_SixDrive_Enable                   0x00002690   Section        0  pwm_drive.o(i.PORT_SixDrive_Enable)
+    i.PWM_CmpTrigger                         0x000026e4   Section        0  swm2x1_pwm.o(i.PWM_CmpTrigger)
+    i.PWM_Init                               0x00002708   Section        0  swm2x1_pwm.o(i.PWM_Init)
+    i.PWM_IntClr                             0x00002874   Section        0  swm2x1_pwm.o(i.PWM_IntClr)
+    i.PWM_Start                              0x00002878   Section        0  swm2x1_pwm.o(i.PWM_Start)
+    i.RIPD_Angle_Out                         0x00002888   Section        0  positioncheck.o(i.RIPD_Angle_Out)
+    i.RIPD_GetRisingCurrentFunct             0x00002920   Section        0  positioncheck.o(i.RIPD_GetRisingCurrentFunct)
+    i.SMO_TailWindDealwith                   0x00002abc   Section        0  tailwinddect.o(i.SMO_TailWindDealwith)
+    i.Sin_Cos_Cale                           0x00002b8c   Section        0  mytype.o(i.Sin_Cos_Cale)
+    i.SingleR_ADCInject_Deal                 0x00002c10   Section        0  adc.o(i.SingleR_ADCInject_Deal)
+    i.SingleR_Get_PhaseCurrent               0x00002cb4   Section        0  foclib.o(i.SingleR_Get_PhaseCurrent)
+    i.SoftwareInit                           0x00002d64   Section        0  main.o(i.SoftwareInit)
+    i.SpeedMode_Control                      0x00002d80   Section        0  speedmode.o(i.SpeedMode_Control)
+    i.Speed_response                         0x00002df0   Section        0  addfunction.o(i.Speed_response)
+    i.SysTick_Handler                        0x00002ea4   Section        0  interrupt.o(i.SysTick_Handler)
+    i.SystemCoreClockUpdate                  0x00002ebc   Section        0  system_swm211.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x00002f44   Section        0  system_swm211.o(i.SystemInit)
+    i.TIMR0_Handler                          0x00002ff8   Section        0  interrupt.o(i.TIMR0_Handler)
+    i.TIMR1_Handler                          0x0000305c   Section        0  interrupt.o(i.TIMR1_Handler)
+    i.TIMR_GetCurValue                       0x000030cc   Section        0  swm2x1_timr.o(i.TIMR_GetCurValue)
+    i.TIMR_IC_CaptureH_INTClr                0x000030d0   Section        0  swm2x1_timr.o(i.TIMR_IC_CaptureH_INTClr)
+    i.TIMR_IC_CaptureH_INTStat               0x000030d6   Section        0  swm2x1_timr.o(i.TIMR_IC_CaptureH_INTStat)
+    i.TIMR_IC_CaptureL_INTClr                0x000030de   Section        0  swm2x1_timr.o(i.TIMR_IC_CaptureL_INTClr)
+    i.TIMR_IC_CaptureL_INTStat               0x000030e4   Section        0  swm2x1_timr.o(i.TIMR_IC_CaptureL_INTStat)
+    i.TIMR_IC_GetCaptureH                    0x000030ec   Section        0  swm2x1_timr.o(i.TIMR_IC_GetCaptureH)
+    i.TIMR_IC_GetCaptureL                    0x000030f0   Section        0  swm2x1_timr.o(i.TIMR_IC_GetCaptureL)
+    i.TIMR_INTClr                            0x000030f4   Section        0  swm2x1_timr.o(i.TIMR_INTClr)
+    i.TIMR_Init                              0x000030fc   Section        0  swm2x1_timr.o(i.TIMR_Init)
+    i.TIMR_OC_Init                           0x00003230   Section        0  swm2x1_timr.o(i.TIMR_OC_Init)
+    i.TIMR_Start                             0x00003290   Section        0  swm2x1_timr.o(i.TIMR_Start)
+    i.TIMR_Stop                              0x00003318   Section        0  swm2x1_timr.o(i.TIMR_Stop)
+    i.TailWindDetectInit                     0x000033a4   Section        0  tailwinddect.o(i.TailWindDetectInit)
+    i.TailWindSpeedDetect                    0x00003424   Section        0  tailwinddect.o(i.TailWindSpeedDetect)
+    i.Timer_FGOutput                         0x00003570   Section        0  addfunction.o(i.Timer_FGOutput)
+    i.VariablesPreInit                       0x000035dc   Section        0  mtcontrolfunction.o(i.VariablesPreInit)
+    i.__ARM_clz                              0x0000363c   Section        0  depilogue.o(i.__ARM_clz)
+    i.__ARM_common_ll_mulss                  0x0000366a   Section        0  observers.o(i.__ARM_common_ll_mulss)
+    i.__scatterload_copy                     0x0000369c   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000036aa   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000036ac   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x000036bc   Section        0  main.o(i.main)
+    i.mcPI_CurrentLoop                       0x000036f4   Section        0  picontrol.o(i.mcPI_CurrentLoop)
+    i.mc_ControllerPI                        0x0000375c   Section        0  picontrol.o(i.mc_ControllerPI)
+    i.mc_bemfobserv_PLL                      0x000037a8   Section        0  observers.o(i.mc_bemfobserv_PLL)
+    i.mc_bemfobservinit_PLL                  0x00003a8c   Section        0  mtcontrolfunction.o(i.mc_bemfobservinit_PLL)
+    i.mc_ramp                                0x00003b20   Section        0  addfunction.o(i.mc_ramp)
+    i.switchTo12MHz                          0x00003b7c   Section        0  system_swm211.o(i.switchTo12MHz)
+    i.switchToPLL                            0x00003b90   Section        0  system_swm211.o(i.switchToPLL)
+    .constdata                               0x00003bd0   Section      512  mytype.o(.constdata)
+    .data                                    0x20000000   Section        4  addfunction.o(.data)
+    .data                                    0x20000004   Section        2  addfunction.o(.data)
+    .data                                    0x20000006   Section       10  speedmode.o(.data)
+    MotorControlVSP                          0x20000008   Data           2  speedmode.o(.data)
+    VSP                                      0x2000000a   Data           2  speedmode.o(.data)
+    VSP_LSB                                  0x2000000c   Data           2  speedmode.o(.data)
+    MotorControlCLK                          0x2000000e   Data           2  speedmode.o(.data)
+    .data                                    0x20000010   Section        1  mtcontrol.o(.data)
+    .data                                    0x20000011   Section        7  mtcontrolfunction.o(.data)
+    .data                                    0x20000018   Section        6  protect.o(.data)
+    .data                                    0x2000001e   Section        2  tailwinddect.o(.data)
+    LatestTheta                              0x2000001e   Data           2  tailwinddect.o(.data)
+    .data                                    0x20000020   Section       16  foclib.o(.data)
+    .data                                    0x20000030   Section        4  foclib.o(.data)
+    .data                                    0x20000034   Section        4  foclib.o(.data)
+    .data                                    0x20000038   Section        4  observers.o(.data)
+    .data                                    0x2000003c   Section        8  cmp.o(.data)
+    .data                                    0x20000044   Section       12  swm2x1_adc.o(.data)
+    ADC3V6                                   0x20000044   Data           4  swm2x1_adc.o(.data)
+    ADC3V6_K                                 0x20000048   Data           4  swm2x1_adc.o(.data)
+    ADC3V6_Offset                            0x2000004c   Data           4  swm2x1_adc.o(.data)
+    .data                                    0x20000050   Section       12  swm211_flash.o(.data)
+    .data                                    0x2000005c   Section        8  system_swm211.o(.data)
+    .bss                                     0x20000064   Section      144  addfunction.o(.bss)
+    .bss                                     0x200000f4   Section      108  speedmode.o(.bss)
+    .bss                                     0x20000160   Section       60  mtcontrolfunction.o(.bss)
+    .bss                                     0x2000019c   Section       72  protect.o(.bss)
+    .bss                                     0x200001e4   Section       32  tailwinddect.o(.bss)
+    .bss                                     0x20000204   Section       98  foclib.o(.bss)
+    .bss                                     0x20000268   Section      116  observers.o(.bss)
+    .bss                                     0x200002dc   Section      152  picontrol.o(.bss)
+    .bss                                     0x20000374   Section     3152  positioncheck.o(.bss)
+    STACK                                    0x20000fc8   Section     1024  startup_swm211.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_swm211.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x000000c1   Thumb Code    10  startup_swm211.o(RESET)
+    __Vectors_End                            0x000000c1   Thumb Code     0  startup_swm211.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_swm211.o ABSOLUTE
+    NMI_Handler                              0x000000cb   Thumb Code     2  startup_swm211.o(RESET)
+    HardFault_Handler                        0x000000cd   Thumb Code     2  startup_swm211.o(RESET)
+    SVC_Handler                              0x000000cf   Thumb Code     2  startup_swm211.o(RESET)
+    PendSV_Handler                           0x000000d1   Thumb Code     2  startup_swm211.o(RESET)
+    UART0_Handler                            0x000000d5   Thumb Code     2  startup_swm211.o(RESET)
+    CORDIC_Handler                           0x000000d9   Thumb Code     2  startup_swm211.o(RESET)
+    UART1_Handler                            0x000000db   Thumb Code     2  startup_swm211.o(RESET)
+    PWM1_Handler                             0x000000dd   Thumb Code     2  startup_swm211.o(RESET)
+    HALL_Handler                             0x000000e1   Thumb Code     2  startup_swm211.o(RESET)
+    BOD_Handler                              0x000000e5   Thumb Code     2  startup_swm211.o(RESET)
+    PWMBRK_Handler                           0x000000e7   Thumb Code     2  startup_swm211.o(RESET)
+    WDT_Handler                              0x000000e9   Thumb Code     2  startup_swm211.o(RESET)
+    I2C0_Handler                             0x000000eb   Thumb Code     2  startup_swm211.o(RESET)
+    XTALSTOP_Handler                         0x000000ed   Thumb Code     2  startup_swm211.o(RESET)
+    BTIMR0_Handler                           0x000000f3   Thumb Code     2  startup_swm211.o(RESET)
+    BTIMR1_Handler                           0x000000f5   Thumb Code     2  startup_swm211.o(RESET)
+    BTIMR2_Handler                           0x000000f7   Thumb Code     2  startup_swm211.o(RESET)
+    BTIMR3_Handler                           0x000000f9   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOA_Handler                            0x000000fb   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOB_Handler                            0x000000fd   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOM_Handler                            0x000000ff   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOA0_GPIOM0_SPI1_Handler               0x00000101   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOA1_GPIOM1_MPU_Handler                0x00000103   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOA2_GPIOM2_Handler                    0x00000105   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOA3_GPIOM3_Handler                    0x00000107   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOB0_GPIOA8_TIMR2_Handler              0x00000109   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOB1_GPIOA9_DMA_Handler                0x0000010b   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOB2_GPIOA10_CAN0_Handler              0x0000010d   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOB3_GPIOA11_SPI0_Handler              0x0000010f   Thumb Code     2  startup_swm211.o(RESET)
+    GPIOB4_GPIOB10_QEI_Handler               0x00000111   Thumb Code     2  startup_swm211.o(RESET)
+    __main                                   0x00000121   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000121   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000125   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000129   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000129   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000129   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000129   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000131   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000131   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    __aeabi_uidiv                            0x00000135   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x00000135   Thumb Code    44  uidiv.o(.text)
+    __aeabi_idiv                             0x00000161   Thumb Code     0  idiv.o(.text)
+    __aeabi_idivmod                          0x00000161   Thumb Code    40  idiv.o(.text)
+    __aeabi_memset                           0x00000189   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x00000189   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x00000189   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x00000197   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x00000197   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x00000197   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x0000019b   Thumb Code    18  memseta.o(.text)
+    __aeabi_dadd                             0x000001ad   Thumb Code   328  dadd.o(.text)
+    __aeabi_dsub                             0x000002f5   Thumb Code    12  dadd.o(.text)
+    __aeabi_drsub                            0x00000301   Thumb Code    12  dadd.o(.text)
+    __aeabi_dmul                             0x00000311   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x000003e1   Thumb Code   234  ddiv.o(.text)
+    __ARM_scalbn                             0x000004d1   Thumb Code    44  dscalb.o(.text)
+    scalbn                                   0x000004d1   Thumb Code     0  dscalb.o(.text)
+    __aeabi_i2d                              0x000004fd   Thumb Code    34  dflti.o(.text)
+    __aeabi_ui2d                             0x00000525   Thumb Code    24  dfltui.o(.text)
+    __aeabi_d2iz                             0x00000541   Thumb Code    62  dfixi.o(.text)
+    __aeabi_d2uiz                            0x00000589   Thumb Code    50  dfixui.o(.text)
+    __aeabi_llsl                             0x000005c5   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x000005c5   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x000005e5   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x000005e5   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x00000607   Thumb Code    38  llsshr.o(.text)
+    _ll_sshift_r                             0x00000607   Thumb Code     0  llsshr.o(.text)
+    __I$use$fp                               0x0000062d   Thumb Code     0  iusefp.o(.text)
+    _double_round                            0x0000062d   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x00000647   Thumb Code   164  depilogue.o(.text)
+    __scatterload                            0x000006ed   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000006ed   Thumb Code     0  init.o(.text)
+    PWM0_Handler                             0x00000711   Thumb Code    24  interrupt.o(PlaceInRAM)
+    Get_CurrentABC                           0x0000072d   Thumb Code     8  mtcontrolfunction.o(PlaceInRAM)
+    mc_phasevoltcalc                         0x00000735   Thumb Code   164  foclib.o(PlaceInRAM)
+    mc_svpwmtrfm                             0x000007d9   Thumb Code   654  foclib.o(PlaceInRAM)
+    InvPark_Cale                             0x00000a67   Thumb Code    66  foclib.o(PlaceInRAM)
+    CurrentLoop                              0x00000aa9   Thumb Code    46  foclib.o(PlaceInRAM)
+    Park_Cale                                0x00000ad7   Thumb Code    66  foclib.o(PlaceInRAM)
+    Clake_Cale                               0x00000b19   Thumb Code    36  foclib.o(PlaceInRAM)
+    FOC_Algorithm                            0x00000b3d   Thumb Code   164  foclib.o(PlaceInRAM)
+    mcTailWind_Handle                        0x00000be1   Thumb Code    80  foclib.o(PlaceInRAM)
+    RevPark_Circle_Limit                     0x00000c31   Thumb Code    94  foclib.o(PlaceInRAM)
+    SMO_Observer                             0x00000ca9   Thumb Code    62  observers.o(PlaceInRAM)
+    ACMP_Handler                             0x00000d09   Thumb Code    48  interrupt.o(i.ACMP_Handler)
+    ADC0_Handler                             0x00000d4d   Thumb Code    50  interrupt.o(i.ADC0_Handler)
+    ADC_Close                                0x00000d91   Thumb Code    12  swm2x1_adc.o(i.ADC_Close)
+    ADC_Init                                 0x00000d9d   Thumb Code   556  swm2x1_adc.o(i.ADC_Init)
+    ADC_Open                                 0x00000ff1   Thumb Code    12  swm2x1_adc.o(i.ADC_Open)
+    ADC_Start                                0x00000ffd   Thumb Code     6  swm2x1_adc.o(i.ADC_Start)
+    Abs_F15                                  0x00001003   Thumb Code    14  observers.o(i.Abs_F15)
+    Base_1ms_TIM                             0x00001011   Thumb Code   104  addfunction.o(i.Base_1ms_TIM)
+    CORDIC_Init                              0x0000108d   Thumb Code    18  swm2x1_cordic.o(i.CORDIC_Init)
+    Cancel_FGTimer                           0x000010a5   Thumb Code    22  timer.o(i.Cancel_FGTimer)
+    DIV_Init                                 0x000010c5   Thumb Code    18  swm2x1_div.o(i.DIV_Init)
+    FGOutput_Timer                           0x000010dd   Thumb Code    54  timer.o(i.FGOutput_Timer)
+    FOCCloseLoopStart                        0x00001129   Thumb Code    48  tailwinddect.o(i.FOCCloseLoopStart)
+    FOCTailWindDealwith                      0x0000117d   Thumb Code     8  tailwinddect.o(i.FOCTailWindDealwith)
+    FOCTailWindTimeLimit                     0x00001185   Thumb Code    54  tailwinddect.o(i.FOCTailWindTimeLimit)
+    FOC_Init                                 0x000011c1   Thumb Code    70  mtcontrolfunction.o(i.FOC_Init)
+    FaultProcess                             0x0000121d   Thumb Code     8  mtcontrolfunction.o(i.FaultProcess)
+    Fault_Detection                          0x0000122d   Thumb Code    60  protect.o(i.Fault_Detection)
+    Fault_OverUnderVoltage                   0x0000126d   Thumb Code   192  protect.o(i.Fault_OverUnderVoltage)
+    Fault_Overcurrent                        0x00001359   Thumb Code   202  protect.o(i.Fault_Overcurrent)
+    Fault_Stall                              0x00001441   Thumb Code   212  protect.o(i.Fault_Stall)
+    Fault_phaseloss                          0x0000153d   Thumb Code   332  protect.o(i.Fault_phaseloss)
+    Flash_Param_at_xMHz                      0x000016ad   Thumb Code    40  swm211_flash.o(i.Flash_Param_at_xMHz)
+    GPIO_Init                                0x000016e5   Thumb Code   196  swm2x1_gpio.o(i.GPIO_Init)
+    GPIO_InvBit                              0x000017b9   Thumb Code    12  swm2x1_gpio.o(i.GPIO_InvBit)
+    GetCurrentOffset                         0x000017c5   Thumb Code   128  mtcontrolfunction.o(i.GetCurrentOffset)
+    HardwareInit                             0x0000186d   Thumb Code    86  main.o(i.HardwareInit)
+    IN_Count                                 0x000018dd   Thumb Code    74  positioncheck.o(i.IN_Count)
+    IPD_SlopCount                            0x00001945   Thumb Code   806  positioncheck.o(i.IPD_SlopCount)
+    Init_ADC                                 0x00001c8d   Thumb Code   166  adc.o(i.Init_ADC)
+    Init_GPIO                                0x00001d51   Thumb Code     2  gpio.o(i.Init_GPIO)
+    Init_OPA                                 0x00001d55   Thumb Code    64  opa.o(i.Init_OPA)
+    Init_PWM_Drive                           0x00001d9d   Thumb Code   146  pwm_drive.o(i.Init_PWM_Drive)
+    Init_Timer                               0x00001e55   Thumb Code     2  timer.o(i.Init_Timer)
+    Inport_Plus_PWM                          0x00001e59   Thumb Code   306  positioncheck.o(i.Inport_Plus_PWM)
+    LPF_Func                                 0x00001f9d   Thumb Code   262  addfunction.o(i.LPF_Func)
+    LPF_General                              0x000020e1   Thumb Code    12  addfunction.o(i.LPF_General)
+    MC_Control                               0x000020ed   Thumb Code   238  mtcontrol.o(i.MC_Control)
+    Motor_Align                              0x0000220d   Thumb Code   206  mtcontrolfunction.o(i.Motor_Align)
+    Motor_Charge                             0x0000230d   Thumb Code   118  mtcontrolfunction.o(i.Motor_Charge)
+    Motor_Init                               0x000023a1   Thumb Code    16  mtcontrolfunction.o(i.Motor_Init)
+    Motor_Open                               0x000023b1   Thumb Code    14  mtcontrolfunction.o(i.Motor_Open)
+    Motor_Ready                              0x000023c5   Thumb Code    26  mtcontrolfunction.o(i.Motor_Ready)
+    Motor_Stop                               0x000023ed   Thumb Code    20  mtcontrolfunction.o(i.Motor_Stop)
+    Motor_TailWind                           0x00002411   Thumb Code    42  mtcontrolfunction.o(i.Motor_TailWind)
+    MotorcontrolInit                         0x00002441   Thumb Code   122  mtcontrolfunction.o(i.MotorcontrolInit)
+    PI_Init                                  0x000024ed   Thumb Code   120  picontrol.o(i.PI_Init)
+    PLLInit                                  0x00002585   Thumb Code    54  system_swm211.o(i.PLLInit)
+    PORT_Init                                0x000025cd   Thumb Code    84  swm2x1_port.o(i.PORT_Init)
+    PORT_SixDrive_DisEnable                  0x00002621   Thumb Code   108  pwm_drive.o(i.PORT_SixDrive_DisEnable)
+    PORT_SixDrive_Enable                     0x00002691   Thumb Code    78  pwm_drive.o(i.PORT_SixDrive_Enable)
+    PWM_CmpTrigger                           0x000026e5   Thumb Code    34  swm2x1_pwm.o(i.PWM_CmpTrigger)
+    PWM_Init                                 0x00002709   Thumb Code   352  swm2x1_pwm.o(i.PWM_Init)
+    PWM_IntClr                               0x00002875   Thumb Code     4  swm2x1_pwm.o(i.PWM_IntClr)
+    PWM_Start                                0x00002879   Thumb Code    10  swm2x1_pwm.o(i.PWM_Start)
+    RIPD_Angle_Out                           0x00002889   Thumb Code   100  positioncheck.o(i.RIPD_Angle_Out)
+    RIPD_GetRisingCurrentFunct               0x00002921   Thumb Code   396  positioncheck.o(i.RIPD_GetRisingCurrentFunct)
+    SMO_TailWindDealwith                     0x00002abd   Thumb Code   150  tailwinddect.o(i.SMO_TailWindDealwith)
+    Sin_Cos_Cale                             0x00002b8d   Thumb Code   128  mytype.o(i.Sin_Cos_Cale)
+    SingleR_ADCInject_Deal                   0x00002c11   Thumb Code   148  adc.o(i.SingleR_ADCInject_Deal)
+    SingleR_Get_PhaseCurrent                 0x00002cb5   Thumb Code   158  foclib.o(i.SingleR_Get_PhaseCurrent)
+    SoftwareInit                             0x00002d65   Thumb Code    18  main.o(i.SoftwareInit)
+    SpeedMode_Control                        0x00002d81   Thumb Code    96  speedmode.o(i.SpeedMode_Control)
+    Speed_response                           0x00002df1   Thumb Code   134  addfunction.o(i.Speed_response)
+    SysTick_Handler                          0x00002ea5   Thumb Code    24  interrupt.o(i.SysTick_Handler)
+    SystemCoreClockUpdate                    0x00002ebd   Thumb Code   114  system_swm211.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x00002f45   Thumb Code   152  system_swm211.o(i.SystemInit)
+    TIMR0_Handler                            0x00002ff9   Thumb Code    82  interrupt.o(i.TIMR0_Handler)
+    TIMR1_Handler                            0x0000305d   Thumb Code    94  interrupt.o(i.TIMR1_Handler)
+    TIMR_GetCurValue                         0x000030cd   Thumb Code     4  swm2x1_timr.o(i.TIMR_GetCurValue)
+    TIMR_IC_CaptureH_INTClr                  0x000030d1   Thumb Code     6  swm2x1_timr.o(i.TIMR_IC_CaptureH_INTClr)
+    TIMR_IC_CaptureH_INTStat                 0x000030d7   Thumb Code     8  swm2x1_timr.o(i.TIMR_IC_CaptureH_INTStat)
+    TIMR_IC_CaptureL_INTClr                  0x000030df   Thumb Code     6  swm2x1_timr.o(i.TIMR_IC_CaptureL_INTClr)
+    TIMR_IC_CaptureL_INTStat                 0x000030e5   Thumb Code     8  swm2x1_timr.o(i.TIMR_IC_CaptureL_INTStat)
+    TIMR_IC_GetCaptureH                      0x000030ed   Thumb Code     4  swm2x1_timr.o(i.TIMR_IC_GetCaptureH)
+    TIMR_IC_GetCaptureL                      0x000030f1   Thumb Code     4  swm2x1_timr.o(i.TIMR_IC_GetCaptureL)
+    TIMR_INTClr                              0x000030f5   Thumb Code     6  swm2x1_timr.o(i.TIMR_INTClr)
+    TIMR_Init                                0x000030fd   Thumb Code   272  swm2x1_timr.o(i.TIMR_Init)
+    TIMR_OC_Init                             0x00003231   Thumb Code    86  swm2x1_timr.o(i.TIMR_OC_Init)
+    TIMR_Start                               0x00003291   Thumb Code   120  swm2x1_timr.o(i.TIMR_Start)
+    TIMR_Stop                                0x00003319   Thumb Code   122  swm2x1_timr.o(i.TIMR_Stop)
+    TailWindDetectInit                       0x000033a5   Thumb Code    82  tailwinddect.o(i.TailWindDetectInit)
+    TailWindSpeedDetect                      0x00003425   Thumb Code   298  tailwinddect.o(i.TailWindSpeedDetect)
+    Timer_FGOutput                           0x00003571   Thumb Code    80  addfunction.o(i.Timer_FGOutput)
+    VariablesPreInit                         0x000035dd   Thumb Code    72  mtcontrolfunction.o(i.VariablesPreInit)
+    __ARM_clz                                0x0000363d   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __ARM_common_ll_mulss                    0x0000366b   Thumb Code    50  observers.o(i.__ARM_common_ll_mulss)
+    __scatterload_copy                       0x0000369d   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000036ab   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000036ad   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x000036bd   Thumb Code    52  main.o(i.main)
+    mcPI_CurrentLoop                         0x000036f5   Thumb Code   104  picontrol.o(i.mcPI_CurrentLoop)
+    mc_ControllerPI                          0x0000375d   Thumb Code    74  picontrol.o(i.mc_ControllerPI)
+    mc_bemfobserv_PLL                        0x000037a9   Thumb Code   716  observers.o(i.mc_bemfobserv_PLL)
+    mc_bemfobservinit_PLL                    0x00003a8d   Thumb Code   100  mtcontrolfunction.o(i.mc_bemfobservinit_PLL)
+    mc_ramp                                  0x00003b21   Thumb Code    86  addfunction.o(i.mc_ramp)
+    switchTo12MHz                            0x00003b7d   Thumb Code    16  system_swm211.o(i.switchTo12MHz)
+    switchToPLL                              0x00003b91   Thumb Code    64  system_swm211.o(i.switchToPLL)
+    SinCos_Table                             0x00003bd0   Data         512  mytype.o(.constdata)
+    Region$$Table$$Base                      0x00003dd0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00003df0   Number         0  anon$$obj.o(Region$$Table)
+    mcSysState                               0x20000000   Data           4  addfunction.o(.data)
+    mcFRState                                0x20000004   Data           2  addfunction.o(.data)
+    DebugSpeed                               0x20000006   Data           2  speedmode.o(.data)
+    mcState                                  0x20000010   Data           1  mtcontrol.o(.data)
+    McStaSet                                 0x20000011   Data           7  mtcontrolfunction.o(.data)
+    mcFaultSource                            0x20000018   Data           1  protect.o(.data)
+    UnderVolt                                0x2000001a   Data           2  protect.o(.data)
+    OverVolt                                 0x2000001c   Data           2  protect.o(.data)
+    VF_Angle                                 0x20000020   Data           2  foclib.o(.data)
+    Debug_ACC                                0x20000024   Data           4  foclib.o(.data)
+    Debug_Angle_Flag                         0x20000028   Data           4  foclib.o(.data)
+    mcUAlBereq                               0x2000002c   Data           4  foclib.o(.data)
+    mcAlpha_Belta_fbck                       0x20000030   Data           4  foclib.o(.data)
+    mcV_AlphaBelta_req                       0x20000034   Data           4  foclib.o(.data)
+    uuuii                                    0x20000038   Data           4  observers.o(.data)
+    Debug_DAC_Offset                         0x2000003c   Data           2  cmp.o(.data)
+    Debug_DAC2V                              0x20000040   Data           4  cmp.o(.data)
+    IAP_Flash_Param                          0x20000050   Data           4  swm211_flash.o(.data)
+    IAP_Flash_Erase                          0x20000054   Data           4  swm211_flash.o(.data)
+    IAP_Flash_Write                          0x20000058   Data           4  swm211_flash.o(.data)
+    SystemCoreClock                          0x2000005c   Data           4  system_swm211.o(.data)
+    CyclesPerUs                              0x20000060   Data           4  system_swm211.o(.data)
+    mcFocCtrl                                0x20000064   Data         108  addfunction.o(.bss)
+    mcSpeedRamp                              0x200000d0   Data          22  addfunction.o(.bss)
+    ONOFFTest                                0x200000e8   Data          12  addfunction.o(.bss)
+    AdcVarible                               0x200000f4   Data          20  speedmode.o(.bss)
+    mcPwmInput                               0x20000108   Data          88  speedmode.o(.bss)
+    mcCurOffset                              0x20000160   Data          36  mtcontrolfunction.o(.bss)
+    mcStartRamp                              0x20000184   Data          24  mtcontrolfunction.o(.bss)
+    mcFaultDect                              0x2000019c   Data          46  protect.o(.bss)
+    mcCurVarible                             0x200001ca   Data          14  protect.o(.bss)
+    mcProtectTime                            0x200001d8   Data          12  protect.o(.bss)
+    TailWindDetect                           0x200001e4   Data          32  tailwinddect.o(.bss)
+    mcDuty                                   0x20000204   Data          54  foclib.o(.bss)
+    FocVar                                   0x2000023a   Data          44  foclib.o(.bss)
+    myObserverVar                            0x20000268   Data         116  observers.o(.bss)
+    Id_Q15Control                            0x200002dc   Data          40  picontrol.o(.bss)
+    Iq_Q15Control                            0x20000304   Data          40  picontrol.o(.bss)
+    Spd_Controller                           0x2000032c   Data          24  picontrol.o(.bss)
+    Id_Controller                            0x20000344   Data          24  picontrol.o(.bss)
+    Iq_Controller                            0x2000035c   Data          24  picontrol.o(.bss)
+    Rising_Current_num1                      0x20000374   Data         500  positioncheck.o(.bss)
+    Rising_Current_num2                      0x20000568   Data         500  positioncheck.o(.bss)
+    Rising_Current_num3                      0x2000075c   Data         500  positioncheck.o(.bss)
+    Rising_Current_num4                      0x20000950   Data         500  positioncheck.o(.bss)
+    Rising_Current_num5                      0x20000b44   Data         500  positioncheck.o(.bss)
+    Rising_Current_num6                      0x20000d38   Data         500  positioncheck.o(.bss)
+    Rising_Compar_num                        0x20000f2c   Data          30  positioncheck.o(.bss)
+    RIPDParam                                0x20000f4c   Data         120  positioncheck.o(.bss)
+    __initial_sp                             0x200013c8   Data           0  startup_swm211.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000121
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00003e54, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00003df0, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000120   Code   RO         2998    RESET               startup_swm211.o
+    0x00000120   0x00000120   0x00000000   Code   RO         3002  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x00000120   0x00000120   0x00000004   Code   RO         3037    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x00000124   0x00000124   0x00000004   Code   RO         3040    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x00000128   0x00000128   0x00000000   Code   RO         3042    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x00000128   0x00000128   0x00000000   Code   RO         3044    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x00000128   0x00000128   0x00000008   Code   RO         3045    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x00000130   0x00000130   0x00000000   Code   RO         3047    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x00000130   0x00000130   0x00000000   Code   RO         3049    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x00000130   0x00000130   0x00000004   Code   RO         3038    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x00000134   0x00000134   0x0000002c   Code   RO         3005    .text               mc_p.l(uidiv.o)
+    0x00000160   0x00000160   0x00000028   Code   RO         3007    .text               mc_p.l(idiv.o)
+    0x00000188   0x00000188   0x00000024   Code   RO         3009    .text               mc_p.l(memseta.o)
+    0x000001ac   0x000001ac   0x00000164   Code   RO         3015    .text               mf_p.l(dadd.o)
+    0x00000310   0x00000310   0x000000d0   Code   RO         3017    .text               mf_p.l(dmul.o)
+    0x000003e0   0x000003e0   0x000000f0   Code   RO         3019    .text               mf_p.l(ddiv.o)
+    0x000004d0   0x000004d0   0x0000002c   Code   RO         3021    .text               mf_p.l(dscalb.o)
+    0x000004fc   0x000004fc   0x00000028   Code   RO         3025    .text               mf_p.l(dflti.o)
+    0x00000524   0x00000524   0x0000001c   Code   RO         3027    .text               mf_p.l(dfltui.o)
+    0x00000540   0x00000540   0x00000048   Code   RO         3031    .text               mf_p.l(dfixi.o)
+    0x00000588   0x00000588   0x0000003c   Code   RO         3033    .text               mf_p.l(dfixui.o)
+    0x000005c4   0x000005c4   0x00000020   Code   RO         3051    .text               mc_p.l(llshl.o)
+    0x000005e4   0x000005e4   0x00000022   Code   RO         3053    .text               mc_p.l(llushr.o)
+    0x00000606   0x00000606   0x00000026   Code   RO         3055    .text               mc_p.l(llsshr.o)
+    0x0000062c   0x0000062c   0x00000000   Code   RO         3057    .text               mc_p.l(iusefp.o)
+    0x0000062c   0x0000062c   0x000000be   Code   RO         3060    .text               mf_p.l(depilogue.o)
+    0x000006ea   0x000006ea   0x00000002   PAD
+    0x000006ec   0x000006ec   0x00000024   Code   RO         3064    .text               mc_p.l(init.o)
+    0x00000710   0x00000710   0x0000001c   Code   RO          352    PlaceInRAM          interrupt.o
+    0x0000072c   0x0000072c   0x00000008   Code   RO          615    PlaceInRAM          mtcontrolfunction.o
+    0x00000734   0x00000734   0x00000574   Code   RO          887    PlaceInRAM          foclib.o
+    0x00000ca8   0x00000ca8   0x00000060   Code   RO          932    PlaceInRAM          observers.o
+    0x00000d08   0x00000d08   0x00000044   Code   RO          353    i.ACMP_Handler      interrupt.o
+    0x00000d4c   0x00000d4c   0x00000044   Code   RO          354    i.ADC0_Handler      interrupt.o
+    0x00000d90   0x00000d90   0x0000000c   Code   RO         2019    i.ADC_Close         swm2x1_adc.o
+    0x00000d9c   0x00000d9c   0x00000254   Code   RO         2020    i.ADC_Init          swm2x1_adc.o
+    0x00000ff0   0x00000ff0   0x0000000c   Code   RO         2030    i.ADC_Open          swm2x1_adc.o
+    0x00000ffc   0x00000ffc   0x00000006   Code   RO         2032    i.ADC_Start         swm2x1_adc.o
+    0x00001002   0x00001002   0x0000000e   Code   RO          933    i.Abs_F15           observers.o
+    0x00001010   0x00001010   0x0000007c   Code   RO          220    i.Base_1ms_TIM      addfunction.o
+    0x0000108c   0x0000108c   0x00000018   Code   RO         2516    i.CORDIC_Init       swm2x1_cordic.o
+    0x000010a4   0x000010a4   0x00000020   Code   RO         1331    i.Cancel_FGTimer    timer.o
+    0x000010c4   0x000010c4   0x00000018   Code   RO         2496    i.DIV_Init          swm2x1_div.o
+    0x000010dc   0x000010dc   0x0000004c   Code   RO         1332    i.FGOutput_Timer    timer.o
+    0x00001128   0x00001128   0x00000054   Code   RO          827    i.FOCCloseLoopStart  tailwinddect.o
+    0x0000117c   0x0000117c   0x00000008   Code   RO          828    i.FOCTailWindDealwith  tailwinddect.o
+    0x00001184   0x00001184   0x0000003c   Code   RO          829    i.FOCTailWindTimeLimit  tailwinddect.o
+    0x000011c0   0x000011c0   0x0000005c   Code   RO          616    i.FOC_Init          mtcontrolfunction.o
+    0x0000121c   0x0000121c   0x00000010   Code   RO          618    i.FaultProcess      mtcontrolfunction.o
+    0x0000122c   0x0000122c   0x00000040   Code   RO          752    i.Fault_Detection   protect.o
+    0x0000126c   0x0000126c   0x000000ec   Code   RO          754    i.Fault_OverUnderVoltage  protect.o
+    0x00001358   0x00001358   0x000000e8   Code   RO          755    i.Fault_Overcurrent  protect.o
+    0x00001440   0x00001440   0x000000fc   Code   RO          756    i.Fault_Stall       protect.o
+    0x0000153c   0x0000153c   0x00000170   Code   RO          758    i.Fault_phaseloss   protect.o
+    0x000016ac   0x000016ac   0x00000038   Code   RO         2891    i.Flash_Param_at_xMHz  swm211_flash.o
+    0x000016e4   0x000016e4   0x000000d4   Code   RO         1468    i.GPIO_Init         swm2x1_gpio.o
+    0x000017b8   0x000017b8   0x0000000c   Code   RO         1469    i.GPIO_InvBit       swm2x1_gpio.o
+    0x000017c4   0x000017c4   0x000000a8   Code   RO          619    i.GetCurrentOffset  mtcontrolfunction.o
+    0x0000186c   0x0000186c   0x00000070   Code   RO            3    i.HardwareInit      main.o
+    0x000018dc   0x000018dc   0x00000068   Code   RO         1144    i.IN_Count          positioncheck.o
+    0x00001944   0x00001944   0x00000348   Code   RO         1145    i.IPD_SlopCount     positioncheck.o
+    0x00001c8c   0x00001c8c   0x000000c4   Code   RO         1247    i.Init_ADC          adc.o
+    0x00001d50   0x00001d50   0x00000002   Code   RO         1224    i.Init_GPIO         gpio.o
+    0x00001d52   0x00001d52   0x00000002   PAD
+    0x00001d54   0x00001d54   0x00000048   Code   RO         1276    i.Init_OPA          opa.o
+    0x00001d9c   0x00001d9c   0x000000b8   Code   RO         1296    i.Init_PWM_Drive    pwm_drive.o
+    0x00001e54   0x00001e54   0x00000002   Code   RO         1333    i.Init_Timer        timer.o
+    0x00001e56   0x00001e56   0x00000002   PAD
+    0x00001e58   0x00001e58   0x00000144   Code   RO         1146    i.Inport_Plus_PWM   positioncheck.o
+    0x00001f9c   0x00001f9c   0x00000144   Code   RO          223    i.LPF_Func          addfunction.o
+    0x000020e0   0x000020e0   0x0000000c   Code   RO          224    i.LPF_General       addfunction.o
+    0x000020ec   0x000020ec   0x00000120   Code   RO          587    i.MC_Control        mtcontrol.o
+    0x0000220c   0x0000220c   0x00000100   Code   RO          620    i.Motor_Align       mtcontrolfunction.o
+    0x0000230c   0x0000230c   0x00000094   Code   RO          623    i.Motor_Charge      mtcontrolfunction.o
+    0x000023a0   0x000023a0   0x00000010   Code   RO          624    i.Motor_Init        mtcontrolfunction.o
+    0x000023b0   0x000023b0   0x00000014   Code   RO          625    i.Motor_Open        mtcontrolfunction.o
+    0x000023c4   0x000023c4   0x00000028   Code   RO          626    i.Motor_Ready       mtcontrolfunction.o
+    0x000023ec   0x000023ec   0x00000024   Code   RO          628    i.Motor_Stop        mtcontrolfunction.o
+    0x00002410   0x00002410   0x00000030   Code   RO          629    i.Motor_TailWind    mtcontrolfunction.o
+    0x00002440   0x00002440   0x000000ac   Code   RO          630    i.MotorcontrolInit  mtcontrolfunction.o
+    0x000024ec   0x000024ec   0x00000098   Code   RO          981    i.PI_Init           picontrol.o
+    0x00002584   0x00002584   0x00000048   Code   RO         2924    i.PLLInit           system_swm211.o
+    0x000025cc   0x000025cc   0x00000054   Code   RO         1435    i.PORT_Init         swm2x1_port.o
+    0x00002620   0x00002620   0x00000070   Code   RO         1297    i.PORT_SixDrive_DisEnable  pwm_drive.o
+    0x00002690   0x00002690   0x00000054   Code   RO         1298    i.PORT_SixDrive_Enable  pwm_drive.o
+    0x000026e4   0x000026e4   0x00000022   Code   RO         2251    i.PWM_CmpTrigger    swm2x1_pwm.o
+    0x00002706   0x00002706   0x00000002   PAD
+    0x00002708   0x00002708   0x0000016c   Code   RO         2256    i.PWM_Init          swm2x1_pwm.o
+    0x00002874   0x00002874   0x00000004   Code   RO         2257    i.PWM_IntClr        swm2x1_pwm.o
+    0x00002878   0x00002878   0x00000010   Code   RO         2270    i.PWM_Start         swm2x1_pwm.o
+    0x00002888   0x00002888   0x00000098   Code   RO         1148    i.RIPD_Angle_Out    positioncheck.o
+    0x00002920   0x00002920   0x0000019c   Code   RO         1149    i.RIPD_GetRisingCurrentFunct  positioncheck.o
+    0x00002abc   0x00002abc   0x000000d0   Code   RO          830    i.SMO_TailWindDealwith  tailwinddect.o
+    0x00002b8c   0x00002b8c   0x00000084   Code   RO         1115    i.Sin_Cos_Cale      mytype.o
+    0x00002c10   0x00002c10   0x000000a4   Code   RO         1248    i.SingleR_ADCInject_Deal  adc.o
+    0x00002cb4   0x00002cb4   0x000000b0   Code   RO          888    i.SingleR_Get_PhaseCurrent  foclib.o
+    0x00002d64   0x00002d64   0x0000001c   Code   RO            4    i.SoftwareInit      main.o
+    0x00002d80   0x00002d80   0x00000070   Code   RO          309    i.SpeedMode_Control  speedmode.o
+    0x00002df0   0x00002df0   0x000000b4   Code   RO          226    i.Speed_response    addfunction.o
+    0x00002ea4   0x00002ea4   0x00000018   Code   RO          355    i.SysTick_Handler   interrupt.o
+    0x00002ebc   0x00002ebc   0x00000088   Code   RO         2925    i.SystemCoreClockUpdate  system_swm211.o
+    0x00002f44   0x00002f44   0x000000b4   Code   RO         2926    i.SystemInit        system_swm211.o
+    0x00002ff8   0x00002ff8   0x00000064   Code   RO          356    i.TIMR0_Handler     interrupt.o
+    0x0000305c   0x0000305c   0x00000070   Code   RO          357    i.TIMR1_Handler     interrupt.o
+    0x000030cc   0x000030cc   0x00000004   Code   RO         1612    i.TIMR_GetCurValue  swm2x1_timr.o
+    0x000030d0   0x000030d0   0x00000006   Code   RO         1614    i.TIMR_IC_CaptureH_INTClr  swm2x1_timr.o
+    0x000030d6   0x000030d6   0x00000008   Code   RO         1617    i.TIMR_IC_CaptureH_INTStat  swm2x1_timr.o
+    0x000030de   0x000030de   0x00000006   Code   RO         1618    i.TIMR_IC_CaptureL_INTClr  swm2x1_timr.o
+    0x000030e4   0x000030e4   0x00000008   Code   RO         1621    i.TIMR_IC_CaptureL_INTStat  swm2x1_timr.o
+    0x000030ec   0x000030ec   0x00000004   Code   RO         1622    i.TIMR_IC_GetCaptureH  swm2x1_timr.o
+    0x000030f0   0x000030f0   0x00000004   Code   RO         1623    i.TIMR_IC_GetCaptureL  swm2x1_timr.o
+    0x000030f4   0x000030f4   0x00000006   Code   RO         1625    i.TIMR_INTClr       swm2x1_timr.o
+    0x000030fa   0x000030fa   0x00000002   PAD
+    0x000030fc   0x000030fc   0x00000134   Code   RO         1629    i.TIMR_Init         swm2x1_timr.o
+    0x00003230   0x00003230   0x00000060   Code   RO         1635    i.TIMR_OC_Init      swm2x1_timr.o
+    0x00003290   0x00003290   0x00000088   Code   RO         1640    i.TIMR_Start        swm2x1_timr.o
+    0x00003318   0x00003318   0x0000008c   Code   RO         1641    i.TIMR_Stop         swm2x1_timr.o
+    0x000033a4   0x000033a4   0x00000080   Code   RO          831    i.TailWindDetectInit  tailwinddect.o
+    0x00003424   0x00003424   0x0000014c   Code   RO          832    i.TailWindSpeedDetect  tailwinddect.o
+    0x00003570   0x00003570   0x0000006c   Code   RO          227    i.Timer_FGOutput    addfunction.o
+    0x000035dc   0x000035dc   0x00000060   Code   RO          631    i.VariablesPreInit  mtcontrolfunction.o
+    0x0000363c   0x0000363c   0x0000002e   Code   RO         3062    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x0000366a   0x0000366a   0x00000032   Code   RO          970    i.__ARM_common_ll_mulss  observers.o
+    0x0000369c   0x0000369c   0x0000000e   Code   RO         3068    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x000036aa   0x000036aa   0x00000002   Code   RO         3069    i.__scatterload_null  mc_p.l(handlers.o)
+    0x000036ac   0x000036ac   0x0000000e   Code   RO         3070    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x000036ba   0x000036ba   0x00000002   PAD
+    0x000036bc   0x000036bc   0x00000038   Code   RO            5    i.main              main.o
+    0x000036f4   0x000036f4   0x00000068   Code   RO          982    i.mcPI_CurrentLoop  picontrol.o
+    0x0000375c   0x0000375c   0x0000004a   Code   RO          983    i.mc_ControllerPI   picontrol.o
+    0x000037a6   0x000037a6   0x00000002   PAD
+    0x000037a8   0x000037a8   0x000002e4   Code   RO          934    i.mc_bemfobserv_PLL  observers.o
+    0x00003a8c   0x00003a8c   0x00000094   Code   RO          632    i.mc_bemfobservinit_PLL  mtcontrolfunction.o
+    0x00003b20   0x00003b20   0x0000005c   Code   RO          228    i.mc_ramp           addfunction.o
+    0x00003b7c   0x00003b7c   0x00000014   Code   RO         2927    i.switchTo12MHz     system_swm211.o
+    0x00003b90   0x00003b90   0x00000040   Code   RO         2930    i.switchToPLL       system_swm211.o
+    0x00003bd0   0x00003bd0   0x00000200   Data   RO         1117    .constdata          mytype.o
+    0x00003dd0   0x00003dd0   0x00000020   Data   RO         3066    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00003df0, Size: 0x000013c8, Max: 0x00002000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00003df0   0x00000004   Data   RW          232    .data               addfunction.o
+    0x20000004   0x00003df4   0x00000002   Data   RW          233    .data               addfunction.o
+    0x20000006   0x00003df6   0x0000000a   Data   RW          312    .data               speedmode.o
+    0x20000010   0x00003e00   0x00000001   Data   RW          590    .data               mtcontrol.o
+    0x20000011   0x00003e01   0x00000007   Data   RW          635    .data               mtcontrolfunction.o
+    0x20000018   0x00003e08   0x00000006   Data   RW          761    .data               protect.o
+    0x2000001e   0x00003e0e   0x00000002   Data   RW          834    .data               tailwinddect.o
+    0x20000020   0x00003e10   0x00000010   Data   RW          892    .data               foclib.o
+    0x20000030   0x00003e20   0x00000004   Data   RW          896    .data               foclib.o
+    0x20000034   0x00003e24   0x00000004   Data   RW          897    .data               foclib.o
+    0x20000038   0x00003e28   0x00000004   Data   RW          938    .data               observers.o
+    0x2000003c   0x00003e2c   0x00000008   Data   RW         1367    .data               cmp.o
+    0x20000044   0x00003e34   0x0000000c   Data   RW         2035    .data               swm2x1_adc.o
+    0x20000050   0x00003e40   0x0000000c   Data   RW         2892    .data               swm211_flash.o
+    0x2000005c   0x00003e4c   0x00000008   Data   RW         2932    .data               system_swm211.o
+    0x20000064        -       0x00000090   Zero   RW          229    .bss                addfunction.o
+    0x200000f4        -       0x0000006c   Zero   RW          311    .bss                speedmode.o
+    0x20000160        -       0x0000003c   Zero   RW          634    .bss                mtcontrolfunction.o
+    0x2000019c        -       0x00000048   Zero   RW          760    .bss                protect.o
+    0x200001e4        -       0x00000020   Zero   RW          833    .bss                tailwinddect.o
+    0x20000204        -       0x00000062   Zero   RW          890    .bss                foclib.o
+    0x20000266   0x00003e54   0x00000002   PAD
+    0x20000268        -       0x00000074   Zero   RW          936    .bss                observers.o
+    0x200002dc        -       0x00000098   Zero   RW          985    .bss                picontrol.o
+    0x20000374        -       0x00000c50   Zero   RW         1150    .bss                positioncheck.o
+    0x20000fc4   0x00003e54   0x00000004   PAD
+    0x20000fc8        -       0x00000400   Zero   RW         2996    STACK               startup_swm211.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       360         46          0          0          0       6928   adc.o
+       840        162          0          6        144       7597   addfunction.o
+         0          0          0          8          0        279   cmp.o
+      1572        132          0         24         98       7109   foclib.o
+         2          0          0          0          0        404   gpio.o
+       400         78          0          0          0       2979   interrupt.o
+       196         40          0          0          0      79671   main.o
+       288         62          0          1          0       1492   mtcontrol.o
+      1264        314          0          7         60       8490   mtcontrolfunction.o
+       132          4        512          0          0       1274   mytype.o
+       900         58          0          4        116       4426   observers.o
+        72          8          0          0          0        455   opa.o
+       330         32          0          0        152       7257   picontrol.o
+      1832        190          0          0       3152       8366   positioncheck.o
+      1152        154          0          6         72       7380   protect.o
+       380         48          0          0          0       1750   pwm_drive.o
+       112         16          0         10        108       3921   speedmode.o
+       288        206          0          0       1024       1956   startup_swm211.o
+        56         16          0         12          0       1448   swm211_flash.o
+       626         40          0         12          0       2958   swm2x1_adc.o
+        24          6          0          0          0        850   swm2x1_cordic.o
+        24          6          0          0          0        835   swm2x1_div.o
+       224         16          0          0          0       1890   swm2x1_gpio.o
+        84          0          0          0          0       1056   swm2x1_port.o
+       418         18          0          0          0       3045   swm2x1_pwm.o
+       726         80          0          0          0      14139   swm2x1_timr.o
+       472         72          0          8          0       2899   system_swm211.o
+       820        180          0          2         32       4720   tailwinddect.o
+       110         32          0          0          0       1331   timer.o
+
+    ----------------------------------------------------------------------
+     13714       2016        544        100       4964     186905   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        10          0          0          0          6          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        40          0          0          0          0         72   idiv.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        38          0          0          0          0         68   llsshr.o
+        34          0          0          0          0         68   llushr.o
+        36          0          0          0          0        100   memseta.o
+        44          0          0          0          0         72   uidiv.o
+       356          4          0          0          0        140   dadd.o
+       240          6          0          0          0         84   ddiv.o
+       236          0          0          0          0        216   depilogue.o
+        72         10          0          0          0         72   dfixi.o
+        60         10          0          0          0         68   dfixui.o
+        40          6          0          0          0         68   dflti.o
+        28          4          0          0          0         68   dfltui.o
+       208          6          0          0          0         88   dmul.o
+        44          0          0          0          0         72   dscalb.o
+
+    ----------------------------------------------------------------------
+      1598         62          0          0          0       1392   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       310         16          0          0          0        516   mc_p.l
+      1284         46          0          0          0        876   mf_p.l
+
+    ----------------------------------------------------------------------
+      1598         62          0          0          0       1392   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     15312       2078        544        100       4964     183609   Grand Totals
+     15312       2078        544        100       4964     183609   ELF Image Totals
+     15312       2078        544        100          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                15856 (  15.48kB)
+    Total RW  Size (RW Data + ZI Data)              5064 (   4.95kB)
+    Total ROM Size (Code + RO Data + RW Data)      15956 (  15.58kB)
+
+==============================================================================
+

@@ -1,0 +1,1474 @@
+Dependencies for Project 'SWM211_FOC', Target 'SWM211': (DO NOT MODIFY !)
+F (.\APP\source\Application\main.c)(0x65AE775C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\main.o --omf_browse .\out\main.crf --depend .\out\main.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Application\Interrupt.c)(0x65AC0FC5)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\interrupt.o --omf_browse .\out\interrupt.crf --depend .\out\interrupt.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\include\Protect.h)(0x64DCB4C7)()
+F (.\APP\include\Parameter.h)(0x65AA3749)()
+F (.\APP\include\Customer.h)(0x65AA6B91)()
+F (.\APP\include\MyProject.h)(0x65A9F1D4)()
+F (.\APP\source\Application\retarget.c)(0x654F3EAF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\retarget.o --omf_browse .\out\retarget.crf --depend .\out\retarget.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\APP\source\Application\util.c)(0x659CB44B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\util.o --omf_browse .\out\util.crf --depend .\out\util.d)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Application\test.c)(0x65AC4D1F)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\test.o --omf_browse .\out\test.crf --depend .\out\test.d)
+I (.\APP\include\test.h)(0x65869CB9)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+F (.\APP\source\Application\Flash.c)(0x65AA4B1E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\flash.o --omf_browse .\out\flash.crf --depend .\out\flash.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\FOC\SWM21P20230328.lib)(0x642E0CE5)()
+F (.\APP\source\FOC\Foc.c)(0x65AFBF72)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\foc.o --omf_browse .\out\foc.crf --depend .\out\foc.d)
+I (.\APP\include\Foc.h)(0x65AE8408)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\FOC\PiController.c)(0x659CF55A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\picontroller.o --omf_browse .\out\picontroller.crf --depend .\out\picontroller.d)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\FOC\Pll.c)(0x65ABE554)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\pll.o --omf_browse .\out\pll.crf --depend .\out\pll.d)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\FOC\foc_util.c)(0x65ABEB7E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\foc_util.o --omf_browse .\out\foc_util.crf --depend .\out\foc_util.d)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\FOC\foc_interface.c)(0x65A8E9EC)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\foc_interface.o --omf_browse .\out\foc_interface.crf --depend .\out\foc_interface.d)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\GPIO.c)(0x65A9F2AA)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\gpio.o --omf_browse .\out\gpio.crf --depend .\out\gpio.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\ADC.c)(0x65A9E7C2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\adc.o --omf_browse .\out\adc.crf --depend .\out\adc.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\OPA.c)(0x65A9EA1A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\opa.o --omf_browse .\out\opa.crf --depend .\out\opa.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\PWM_DRIVE.c)(0x65A7A0EA)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\pwm_drive.o --omf_browse .\out\pwm_drive.crf --depend .\out\pwm_drive.d)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\TIMER.c)(0x65A9F1FE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\timer.o --omf_browse .\out\timer.crf --depend .\out\timer.d)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\CMP.c)(0x6550A5B5)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\cmp.o --omf_browse .\out\cmp.crf --depend .\out\cmp.d)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+F (.\APP\source\Hardware\FLASH.c)(0x642E0CE6)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\flash_1.o --omf_browse .\out\flash_1.crf --depend .\out\flash_1.d)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (APP\source\Hardware\FLASH.h)(0x642E0CE6)
+F (.\APP\source\Hardware\UART.c)(0x659CDD3E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\uart.o --omf_browse .\out\uart.crf --depend .\out\uart.d)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+I (APP\source\Hardware\UART.h)(0x6431D1D9)
+I (.\APP\include\MyProject.h)(0x65A9F1D4)
+I (.\APP\include\Customer.h)(0x65AA6B91)
+I (.\APP\include\Parameter.h)(0x65AA3749)
+I (.\APP\include\Protect.h)(0x64DCB4C7)
+I (.\APP\include\Develop.h)(0x6597CA10)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (.\APP\include\MyType.h)(0x654CF23A)
+I (.\APP\include\PiController.h)(0x658BA8E9)
+I (.\APP\include\Pll.h)(0x65ABE56E)
+I (.\APP\include\foc.h)(0x65AE8408)
+I (.\APP\include\foc_interface.h)(0x659D1BAE)
+I (.\APP\include\foc_util.h)(0x65AA6232)
+I (.\APP\source\Hardware\ADC.h)(0x65A9E78D)
+I (.\APP\source\Hardware\CMP.h)(0x642E0CE6)
+I (.\APP\source\Hardware\PWM_DRIVE.h)(0x654E30BE)
+I (.\APP\include\FLASH.h)(0x65AA49AF)
+I (.\APP\source\Hardware\GPIO.h)(0x642E0CE6)
+I (.\APP\source\Hardware\OPA.h)(0x642E0CE6)
+I (.\APP\source\Hardware\TIMER.h)(0x642E0CE7)
+I (.\APP\include\util.h)(0x65A9F3BF)
+I (.\APP\include\cmd.h)(0x64E31699)
+I (.\APP\include\test.h)(0x65869CB9)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_port.c)(0x60DECF38)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_port.o --omf_browse .\out\swm2x1_port.crf --depend .\out\swm2x1_port.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.c)(0x65767BB8)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_gpio.o --omf_browse .\out\swm2x1_gpio.crf --depend .\out\swm2x1_gpio.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.c)(0x60DE7DB2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_exti.o --omf_browse .\out\swm2x1_exti.crf --depend .\out\swm2x1_exti.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.c)(0x6375C992)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_timr.o --omf_browse .\out\swm2x1_timr.crf --depend .\out\swm2x1_timr.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.c)(0x6350CE6C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_uart.o --omf_browse .\out\swm2x1_uart.crf --depend .\out\swm2x1_uart.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.c)(0x649E2638)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_adc.o --omf_browse .\out\swm2x1_adc.crf --depend .\out\swm2x1_adc.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.c)(0x658246C2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_i2c.o --omf_browse .\out\swm2x1_i2c.crf --depend .\out\swm2x1_i2c.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.c)(0x62BD52B4)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_pwm.o --omf_browse .\out\swm2x1_pwm.crf --depend .\out\swm2x1_pwm.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_rtc.c)(0x6411889A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_rtc.o --omf_browse .\out\swm2x1_rtc.crf --depend .\out\swm2x1_rtc.d)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.c)(0x6567EC8A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_wdt.o --omf_browse .\out\swm2x1_wdt.crf --depend .\out\swm2x1_wdt.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.c)(0x60DE7DB2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_sleep.o --omf_browse .\out\swm2x1_sleep.crf --depend .\out\swm2x1_sleep.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.c)(0x60DE7DB2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_div.o --omf_browse .\out\swm2x1_div.crf --depend .\out\swm2x1_div.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.c)(0x60DE7DB2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_cordic.o --omf_browse .\out\swm2x1_cordic.crf --depend .\out\swm2x1_cordic.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.c)(0x6267567E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_spi.o --omf_browse .\out\swm2x1_spi.crf --depend .\out\swm2x1_spi.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.c)(0x60DE7DB2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_qei.o --omf_browse .\out\swm2x1_qei.crf --depend .\out\swm2x1_qei.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.c)(0x6360CBF8)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_dma.o --omf_browse .\out\swm2x1_dma.crf --depend .\out\swm2x1_dma.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.c)(0x6360CBEC)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm2x1_can.o --omf_browse .\out\swm2x1_can.crf --depend .\out\swm2x1_can.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM201_flash.c)(0x61AD7056)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm201_flash.o --omf_browse .\out\swm201_flash.crf --depend .\out\swm201_flash.d)
+F (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_flash.c)(0x6360CBA0)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\swm211_flash.o --omf_browse .\out\swm211_flash.crf --depend .\out\swm211_flash.d)
+I (CSL\SWM2X1_StdPeriph_Driver\SWM2X1.h)(0x6360C602)
+I (.\CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (.\CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\CMSIS\DeviceSupport\system_SWM211.c)(0x65A5374C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 -Otime --apcs=interwork --split_sections -I .\CSL\CMSIS\CoreSupport -I .\CSL\CMSIS\DeviceSupport -I .\CSL\SWM2X1_StdPeriph_Driver -I .\User -I .\APP\include -I .\APP\source\Hardware-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="525" -DCHIP_SWM211-o .\out\system_swm211.o --omf_browse .\out\system_swm211.crf --depend .\out\system_swm211.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (CSL\CMSIS\DeviceSupport\SWM211.h)(0x6572692E)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (.\CSL\CMSIS\CoreSupport\core_cm0.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmInstr.h)(0x542135DE)
+I (.\CSL\CMSIS\CoreSupport\core_cmFunc.h)(0x542135DE)
+I (CSL\CMSIS\DeviceSupport\system_SWM211.h)(0x62A44178)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM211_port.h)(0x635F6BCC)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_gpio.h)(0x65767B72)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_exti.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_timr.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_uart.h)(0x6350CDB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_spi.h)(0x626755F4)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_i2c.h)(0x623AC5C2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_pwm.h)(0x61A46E4A)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_adc.h)(0x649A8DE0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_dma.h)(0x6350DBBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_mpu.h)(0x6135E5D0)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_can.h)(0x63521142)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_div.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_cordic.h)(0x65AC5469)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_wdt.h)(0x6567ECBA)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_qei.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_flash.h)(0x60E3F034)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_sleep.h)(0x60DE7DB2)
+I (.\CSL\SWM2X1_StdPeriph_Driver\SWM2X1_iofilt.h)(0x62AA99BA)
+F (.\CSL\CMSIS\DeviceSupport\startup\arm\startup_SWM211.s)(0x624FC306)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_SWM211-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver-IC:\Keil\ARM\CMSIS\Include-IC:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 525" --pd "CHIP_SWM211 SETA 1"--list .\out\startup_swm211.lst --xref -o .\out\startup_swm211.o --depend .\out\startup_swm211.d)
+F (.\APP\source\Document\Debuglog.txt)(0x642E0CE5)()

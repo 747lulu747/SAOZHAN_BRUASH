@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "myproject.h": "c",
+    "foc.h": "c",
+    "foc_util.h": "c",
+    "picontroller.h": "c",
+    "app.h": "c"
+  }
+}

@@ -1,0 +1,5 @@
+--create .\core_lib\SV_CORE_LIB.lib
+.\core_lib\foc.o
+.\core_lib\foc_util.o
+.\core_lib\picontroller.o
+.\core_lib\pll.o

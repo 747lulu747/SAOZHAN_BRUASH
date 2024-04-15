@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LU csp, LU, LIC=9WSKC-738IW-RAQDM-XUMAR-1KVDH-CDB8R
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.0.5.0
+Toolchain Path:  C:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.03 [Build 76]
+Assembler:       Armasm.exe V5.03.0.76
+Linker/Locator:  ArmLink.exe V5.03.0.76
+Library Manager: ArmAr.exe V5.03.0.76
+Hex Converter:   FromElf.exe V5.03.0.76
+CPU DLL:         SARMCM3.DLL V5.0.5.0
+Dialog DLL:      DARMCM1.DLL V1.11.00.0
+Target DLL:      Segger\JL2CM3.dll V2.88.0.0
+Dialog DLL:      TARMCM1.DLL V1.08.00.0
+ 
+<h2>Project:</h2>
+D:\凯创得\扫动牙刷\src\SEVOR_DEV - V0.0 - FA00\SWM211_FOC.uvprojx
+Project File Date:  12/29/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.03 [Build 76]', folder: 'C:\Keil\ARM\ARMCC\Bin'
+Build target 'SWM211'
+compiling Foc.c...
+APP\source\FOC\Foc.c(182): warning:  #68-D: integer conversion resulted in a change of sign
+    PWM0->BRKCR &= (~0x03<<8);
+APP\source\FOC\Foc.c(185): warning:  #68-D: integer conversion resulted in a change of sign
+    PWM1->BRKCR &= (~0x03<<8);
+APP\source\FOC\Foc.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=15296 RO-data=48 RW-data=492 ZI-data=1500  
+After Build - User command #1: fromelf --bin -o "D:\凯创得\扫动牙刷\src\SEVOR_DEV - V0.0 - FA00\out\SWM21P.bin" "D:\凯创得\扫动牙刷\src\SEVOR_DEV - V0.0 - FA00\out\SWM21P.axf"
+After Build - User command #2: fromelf --text -a -c -o "D:\凯创得\扫动牙刷\src\SEVOR_DEV - V0.0 - FA00\out\SWM21P.asm" "D:\凯创得\扫动牙刷\src\SEVOR_DEV - V0.0 - FA00\out\SWM21P.axf"
+".\out\SWM21P.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Synwit
+                http://www.synwit.com/pack/Synwit.SWM32_DFP.1.20.1.pack
+                Synwit.SWM32_DFP.1.20.1
+                Synwit 32bit MCU Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_SWM211
+  C:\Keil\ARM\PACK\Synwit\SWM32_DFP\1.20.1\CSL\SWM2X1\SWM2X1_StdPeriph_Driver
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

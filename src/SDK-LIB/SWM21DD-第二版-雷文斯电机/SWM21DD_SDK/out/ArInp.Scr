@@ -1,0 +1,6 @@
+--create .\out\SWM21P_20230308.lib
+.\out\foclib.o
+.\out\observers.o
+.\out\picontrol.o
+.\out\mytype.o
+.\out\positioncheck.o
