@@ -1,0 +1,11 @@
+Added Pin To Net: NetName=VDD Pin=C6-2
+Added Pin To Net: NetName=VDD Pin=C14-2
+Added Pin To Net: NetName=VDD Pin=C15-2
+Added Pin To Net: NetName=VDD Pin=DS1-1
+Added Pin To Net: NetName=VDD Pin=P1-1
+Added Pin To Net: NetName=VDD Pin=R8-2
+Added Pin To Net: NetName=VDD Pin=R13-1
+Added Pin To Net: NetName=VDD Pin=R44-1
+Added Pin To Net: NetName=VDD Pin=U1-5
+Added Pin To Net: NetName=VDD Pin=U2-5
+Change Net Name : Old Net Name=VDD New Net Name=VBAT_8V4

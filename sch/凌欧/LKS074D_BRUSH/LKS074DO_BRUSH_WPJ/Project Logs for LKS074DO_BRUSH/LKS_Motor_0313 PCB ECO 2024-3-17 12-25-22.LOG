@@ -1,0 +1,18 @@
+Removed Member From Class: ClassName=LKS_074DO Member=LED1
+Added Component: Designator=LED7(SMD3528-RGB)
+Added Pin To Net: NetName=NetLED7_1 Pin=LED7-1
+Added Pin To Net: NetName=NetLED7_1 Pin=R21-1
+Added Net: Name=NetLED7_1
+Added Pin To Net: NetName=NetLED7_2 Pin=LED7-2
+Added Pin To Net: NetName=NetLED7_2 Pin=Q7-3
+Added Net: Name=NetLED7_2
+Added Pin To Net: NetName=NetLED7_3 Pin=LED7-3
+Added Pin To Net: NetName=NetLED7_3 Pin=Q6-3
+Added Net: Name=NetLED7_3
+Added Pin To Net: NetName=NetLED7_5 Pin=LED7-5
+Added Pin To Net: NetName=NetLED7_5 Pin=R20-1
+Added Net: Name=NetLED7_5
+Added Pin To Net: NetName=NetLED7_6 Pin=LED7-6
+Added Pin To Net: NetName=NetLED7_6 Pin=R19-1
+Added Net: Name=NetLED7_6
+Added Member To Class: ClassName=LKS_074DO Member=Component LED7 RGB3528

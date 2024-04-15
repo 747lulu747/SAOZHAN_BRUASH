@@ -1,0 +1,9 @@
+Importer Log Report
+Project : 2-new-T03-V1.PrjPcb
+
+Section : Document - D:\凯创得\扫动牙刷\火猩未来\sch\2-new-T03-V1.asc
+
+    Section : Import Messages
+        Error   : Can't find PADS via with name: 'STANDARDVIA. Via won't be added to board.
+    EndSection
+EndSection

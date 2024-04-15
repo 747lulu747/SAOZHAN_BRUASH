@@ -1,0 +1,103 @@
+Removed Pin From Net: NetName=VBAT_8V4 Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=P2-3
+Removed Pin From Net: NetName=GND Pin=P2-4
+Removed Pin From Net: NetName=GND Pin=P3-0/2
+Removed Pin From Net: NetName=GND Pin=P3-0
+Removed Pin From Net: NetName=GND Pin=P6-3
+Removed Pin From Net: NetName=GND Pin=P6-4
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q1-2
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q1-3
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q1-4
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q1-9
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q2-2
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q2-3
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q2-4
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q2-9
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q9-2
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q9-3
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q9-4
+Removed Pin From Net: NetName=VBAT_8V4 Pin=Q9-9
+Removed Pin From Net: NetName=GND Pin=R9-2
+Removed Pin From Net: NetName=VBAT_8V4 Pin=R13-1
+Removed Pin From Net: NetName=NetD3_2 Pin=R14-1
+Removed Pin From Net: NetName=GND Pin=R15-1
+Removed Pin From Net: NetName=GND Pin=R16-2
+Removed Pin From Net: NetName=VBAT_8V4 Pin=U1-5
+Removed Member From Class: ClassName=LKS_074DO_0329 Member=R14
+Removed Member From Class: ClassName=LKS_074DO_0329 Member=R15
+Removed Member From Class: ClassName=LKS_074DO_0329 Member=R16
+Change Component Comment : Designator=R9 Old Comment=0 New Comment=10K
+Change Component Comment : Designator=R13 Old Comment=1.5M/NC New Comment=20K
+Change Component Comment : Designator=R8 Old Comment=200K New Comment=47K
+Added Component: Designator=D7(SOD-323)
+Added Component: Designator=Q10(DFN-6-2X2)
+Added Component: Designator=Q11(SOT-23)
+Added Component: Designator=Q12(SOT-23)
+Added Component: Designator=Q13(SOT-23)
+Added Component: Designator=R7(C 0402_M)
+Added Component: Designator=R11(C 0402_M)
+Added Pin To Net: NetName=VBAT_8V4 Pin=Q10-4
+Added Pin To Net: NetName=VBAT_8V4 Pin=Q10-8
+Added Pin To Net: NetName=GND Pin=Q11-2
+Added Pin To Net: NetName=GND Pin=Q12-2
+Added Pin To Net: NetName=GND Pin=Q13-2
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=VBAT_8V4 Pin=R7-2
+Added Pin To Net: NetName=NetD3_2 Pin=R9-1
+Added Pin To Net: NetName=KEYIN Pin=Q13-3
+Added Pin To Net: NetName=KEYIN Pin=U4-37
+Added Net: Name=KEYIN
+Added Pin To Net: NetName=KEYOUT Pin=R11-2
+Added Pin To Net: NetName=KEYOUT Pin=U4-38
+Added Net: Name=KEYOUT
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=D7-1
+Added Pin To Net: NetName=NetD3_1 Pin=K1-2
+Added Pin To Net: NetName=NetD3_1 Pin=K1-2
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD7_2 Pin=D7-2
+Added Pin To Net: NetName=NetD7_2 Pin=R13-1
+Added Net: Name=NetD7_2
+Added Pin To Net: NetName=NetQ10_3 Pin=Q10-3
+Added Pin To Net: NetName=NetQ10_3 Pin=Q11-3
+Added Pin To Net: NetName=NetQ10_3 Pin=Q12-3
+Added Pin To Net: NetName=NetQ10_3 Pin=R7-1
+Added Net: Name=NetQ10_3
+Added Pin To Net: NetName=NetQ11_1 Pin=Q11-1
+Added Pin To Net: NetName=NetQ11_1 Pin=R11-1
+Added Net: Name=NetQ11_1
+Added Pin To Net: NetName=NetQ12_1 Pin=Q12-1
+Added Pin To Net: NetName=NetQ12_1 Pin=R9-2
+Added Net: Name=NetQ12_1
+Added Pin To Net: NetName=NetQ13_1 Pin=Q13-1
+Added Pin To Net: NetName=NetQ13_1 Pin=R13-2
+Added Net: Name=NetQ13_1
+Added Pin To Net: NetName=VCC Pin=C6-2
+Added Pin To Net: NetName=VCC Pin=Q1-2
+Added Pin To Net: NetName=VCC Pin=Q1-3
+Added Pin To Net: NetName=VCC Pin=Q1-4
+Added Pin To Net: NetName=VCC Pin=Q1-9
+Added Pin To Net: NetName=VCC Pin=Q2-2
+Added Pin To Net: NetName=VCC Pin=Q2-3
+Added Pin To Net: NetName=VCC Pin=Q2-4
+Added Pin To Net: NetName=VCC Pin=Q2-9
+Added Pin To Net: NetName=VCC Pin=Q9-2
+Added Pin To Net: NetName=VCC Pin=Q9-3
+Added Pin To Net: NetName=VCC Pin=Q9-4
+Added Pin To Net: NetName=VCC Pin=Q9-9
+Added Pin To Net: NetName=VCC Pin=Q10-1
+Added Pin To Net: NetName=VCC Pin=Q10-2
+Added Pin To Net: NetName=VCC Pin=Q10-5
+Added Pin To Net: NetName=VCC Pin=Q10-6
+Added Pin To Net: NetName=VCC Pin=Q10-7
+Added Pin To Net: NetName=VCC Pin=U1-4
+Added Pin To Net: NetName=VCC Pin=U1-5
+Added Net: Name=VCC
+Change Class Name : Old Net Name=LKS_074DO_0329 New Net Name=LKS_074DO_0406
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component D7 4148
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component Q10 CJMP2011
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component Q11 J3Y
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component Q12 J3Y
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component Q13 J3Y
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component R7 12K
+Added Member To Class: ClassName=LKS_074DO_0406 Member=Component R11 2K

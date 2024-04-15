@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GREEN Pin=R32-2
+Removed Pin From Net: NetName=BLUE Pin=R34-2
+Change Component Footprint: Designator=LED1 Old Footprint=RGB-5050 New Footprint=SMD3528-RGB
+Change Component Comment : Designator=LED1 Old Comment=RGB5050 New Comment=RGB3528
+Added Pin To Net: NetName=BLUE Pin=R32-2
+Added Pin To Net: NetName=GREEN Pin=R34-2

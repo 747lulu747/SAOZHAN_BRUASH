@@ -1,0 +1,31 @@
+#
+#Feature symbol names
+#
+$0 r49.31
+$1 net.bs.jlc.diy+1
+$2 net.bs.jlc.diy+2
+$3 net.bs.jlc.diy+3
+$4 net.bs.jlc.diy+4
+$5 net.bs.jlc.diy+5
+$6 net.bs.jlc.diy+9
+$7 net.bs.jlc.diy+10
+
+#
+#Feature attribute names
+#
+#
+#Layer features
+#
+P 0.428556 0.48784 0 P 0 0
+P 0.318556 0.48784 0 P 0 0
+P 0.198556 0.48784 0 P 0 0
+P 0.268726 0.35206 1 P 0 0
+P 0.239496 0.32283 1 P 0 0
+P 0.211655 0.37851 1 P 0 0
+P 0.36703 0.35618 1 P 0 0
+P 0.499911 0.378765 2 P 0 0
+P 0.465971 0.41271 3 P 0 0
+P 0.170911 0.41571 4 P 0 0
+P 0.136971 0.381765 5 P 0 0
+P 0.396261 0.32695 6 P 0 0
+P 0.422706 0.38402 7 P 0 0

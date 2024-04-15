@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=R3 Old Footprint=C 0402_M New Footprint=R 0402_M
+Change Component Footprint: Designator=R7 Old Footprint=C 0402_M New Footprint=R 0402_M
+Change Component Footprint: Designator=R11 Old Footprint=C 0402_M New Footprint=R 0402_M
+Added Room: Name=LKS_074DO

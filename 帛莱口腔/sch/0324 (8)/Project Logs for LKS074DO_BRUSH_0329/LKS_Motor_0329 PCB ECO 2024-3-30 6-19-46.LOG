@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=OPA0_IP Pin=U4-31
+Removed Pin From Net: NetName=OPA0_IN Pin=U4-32
+Removed Pin From Net: NetName=DCDC_EN Pin=U4-36
+Removed Pin From Net: NetName=BUTTON Pin=U4-37
+Removed Pin From Net: NetName=CH_STAT Pin=U4-38
+Added Pin To Net: NetName=OPA0_IN Pin=U4-35
+Added Pin To Net: NetName=OPA0_IP Pin=U4-36
+Added Pin To Net: NetName=DCDC_EN Pin=U4-37
+Added Pin To Net: NetName=BUTTON Pin=U4-38
+Added Pin To Net: NetName=CH_STAT Pin=U4-39

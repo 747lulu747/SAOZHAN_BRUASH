@@ -1,0 +1,14 @@
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=GND Pin=U4-0
+Added Pin To Net: NetName=LH_OUT_02 Pin=U4-10
+Change Net Name : Old Net Name=LH_OUT_02 New Net Name=LH_OUT_01
+Added Pin To Net: NetName=NetP3_8 Pin=P3-8
+Added Pin To Net: NetName=NetP3_8 Pin=P3-10
+Added Net: Name=NetP3_8

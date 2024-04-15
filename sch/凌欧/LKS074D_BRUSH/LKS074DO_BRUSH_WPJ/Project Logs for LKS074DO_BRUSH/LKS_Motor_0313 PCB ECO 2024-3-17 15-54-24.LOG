@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=OPA0_IP Pin=U4-14
+Removed Pin From Net: NetName=OPA0_IN Pin=U4-15
+Added Pin To Net: NetName=OPA0_IN Pin=U4-31
+Added Pin To Net: NetName=OPA0_IP Pin=U4-32

@@ -1,0 +1,32 @@
+Importer Log Report
+Project : 2-new-T03-V1.PrjPcb
+
+Section : Document - D:\ø≠¥¥µ√\…®∂Ø—¿À¢\ª–…Œ¥¿¥\sch\2-new-T03-V1.txt
+    Section : Load Messages
+        Error   : Error, expected keyword: 'ASSOCIATED_NET' in line: 596
+        Error   : Error, expected keyword: 'DATA' in line: 596
+        Error   : Layer information out of range for ruleset :(3) in line: 706
+        Error   : Layer information out of range for ruleset :(3) in line: 707
+        Warning : Optional alphanumeric pin map is missing for part type RES-2W.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type CAPMICA1.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type $GND_SYMS.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type $OSR_SYMS.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type $PWR_SYMS.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type IND-MOLDED.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type LM109K.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type PIN-2.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type PIN-3.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type QFN40-5X5-MICRO.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type DFN9L-3X3-DULMOS.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type LM258.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type PIN-12-F.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type SO4MM.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type SO8.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type PIN-5-L.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type SO6MM.  Default pin numbers are assigned.
+        Warning : Optional alphanumeric pin map is missing for part type LGA-12-320X320.  Default pin numbers are assigned.
+    EndSection
+
+    Section : Import Messages
+    EndSection
+EndSection

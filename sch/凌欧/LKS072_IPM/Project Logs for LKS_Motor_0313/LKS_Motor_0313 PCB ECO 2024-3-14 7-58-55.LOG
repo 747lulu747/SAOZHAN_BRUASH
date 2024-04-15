@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=R20 Old Footprint=0603_RON New Footprint=0805R
+Change Component Footprint: Designator=R33 Old Footprint=0603_RON New Footprint=0805R
+Change Component Footprint: Designator=R23 Old Footprint=0603_RON New Footprint=1206R
+Change Component Footprint: Designator=C21 Old Footprint=C 0402_M New Footprint=0603
+Change Component Footprint: Designator=C3 Old Footprint=C 0402_M New Footprint=C 0805_M
+Change Component Footprint: Designator=C5 Old Footprint=C 0402_M New Footprint=C 0805_M
+Change Component Footprint: Designator=C6 Old Footprint=C 0402_M New Footprint=C 0805_M
+Change Component Footprint: Designator=C10 Old Footprint=C 0402_M New Footprint=C 0805_M
+Change Component Comment : Designator=R20 Old Comment=2R/1206 New Comment=2R/0805

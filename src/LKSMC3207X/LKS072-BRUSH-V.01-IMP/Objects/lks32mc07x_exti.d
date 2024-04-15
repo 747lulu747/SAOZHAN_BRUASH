@@ -1,0 +1,17 @@
+.\objects\lks32mc07x_exti.o: LKS32MC07x_Periph_Driver\Source\lks32mc07x_exti.c
+.\objects\lks32mc07x_exti.o: .\LKS32MC07x_Periph_Driver\Include\lks32mc07x_exti.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\Linko\LKS07x\1.1.2\Device\Include\lks32mc07x.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\Linko\LKS07x\1.1.2\Device\Include\basic.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h
+.\objects\lks32mc07x_exti.o: .\LKS32MC07x_Periph_Driver\Include\lks32mc07x_gpio.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\Linko\LKS07x\1.1.2\Device\Include\lks32mc07x.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\Linko\LKS07x\1.1.2\Device\Include\lks32mc07x.h
+.\objects\lks32mc07x_exti.o: C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h

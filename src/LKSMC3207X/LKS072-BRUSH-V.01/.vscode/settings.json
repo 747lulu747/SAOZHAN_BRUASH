@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "foc_util.h": "c",
+    "foc.h": "c",
+    "hardware_init.h": "c",
+    "lks32mc07x_lib.h": "c",
+    "pi_controller.h": "c",
+    "pll.h": "c",
+    "type.h": "c",
+    "lks32mc07x_dsp.h": "c",
+    "TEST_61F02x_PWM345.C": "cpp"
+  }
+}

@@ -1,0 +1,12 @@
+Importer Log Report
+Project : CS5503R_DEMO_V1.PrjPcb
+
+Section : Document - D:\凯创得\扫动牙刷\sch\DCDC-充电管理参考\CS5503R_DEMO_V1.asc
+
+    Section : Import Messages
+        Error   : No designator found for component: J2
+        Error   : No designator found for component: J3
+        Error   : No designator found for component: U1
+        Error   : No comment found for component: U1
+    EndSection
+EndSection

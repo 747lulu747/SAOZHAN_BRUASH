@@ -1,0 +1,10 @@
+.\objects\pi_controller.o: FOC\pi_controller.c
+.\objects\pi_controller.o: FOC\pi_controller.h
+.\objects\pi_controller.o: C:\Keil\ARM\PACK\Linko\LKS07x\1.1.2\Device\Include\basic.h
+.\objects\pi_controller.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\pi_controller.o: C:\Keil\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\pi_controller.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\pi_controller.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pi_controller.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\pi_controller.o: FOC\foc_util.h
+.\objects\pi_controller.o: FOC\type.h

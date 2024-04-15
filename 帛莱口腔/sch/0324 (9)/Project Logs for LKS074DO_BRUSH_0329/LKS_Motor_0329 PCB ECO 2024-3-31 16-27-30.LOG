@@ -1,0 +1,12 @@
+Added Component: Designator=3V3(piot)
+Added Component: Designator=CLK(piot)
+Added Component: Designator=DIO(piot)
+Added Component: Designator=GND(piot)
+Added Pin To Net: NetName=+3.3V Pin=3V3-1
+Added Pin To Net: NetName=SWCLK Pin=CLK-1
+Added Pin To Net: NetName=SWDIO Pin=DIO-1
+Added Pin To Net: NetName=GND Pin=GND-1
+Added Member To Class: ClassName=LKS_074DO_0329 Member=Component 3V3 test
+Added Member To Class: ClassName=LKS_074DO_0329 Member=Component CLK test
+Added Member To Class: ClassName=LKS_074DO_0329 Member=Component DIO test
+Added Member To Class: ClassName=LKS_074DO_0329 Member=Component GND test
